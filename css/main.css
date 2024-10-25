@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    padding: 2% 6%;
+    position: relative;
+}
+
+nav a span {
+    flex: 0;
+}
+
+nav img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 36px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 8px;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+/*
+Kilder:
+
+nav bar:
+https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
+ */

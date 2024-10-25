@@ -39,3 +39,28 @@ Kilder:
 nav bar:
 https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
  */
+
+
+/* faq */
+
+/* maps */
+
+/* video */
+.video {
+    width:100%; 
+    height:0; 
+    position: relative; 
+    padding-bottom:56.25%
+
+}
+
+.video iframe {
+    width:50%; 
+    height:50%; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    frameborder:"0" border="0" 
+    scrolling="no" 
+    allowfullscreen allow="autoplay; fullscreen"
+}

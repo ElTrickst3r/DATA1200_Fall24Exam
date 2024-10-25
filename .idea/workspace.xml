@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Blitt ferdig med nav bar og lagt til css for å posisjonerede elementene riktig.">
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Har flyttet kode til Massan så kode passer sammen.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -81,7 +81,7 @@
       <updated>1729770309818</updated>
       <workItem from="1729770311090" duration="7075000" />
       <workItem from="1729852697351" duration="1070000" />
-      <workItem from="1729853784894" duration="979000" />
+      <workItem from="1729853784894" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -99,15 +99,35 @@
       <option name="project" value="LOCAL" />
       <updated>1729782411630</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Har flyttet kode til Massan så kode passer sammen.">
+      <option name="closed" value="true" />
+      <created>1729855254195</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729855254195</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Har endret på noen av navnene på filere for mer klarhet" />
     <MESSAGE value="Blitt ferdig med nav bar og lagt til css for å posisjonerede elementene riktig." />
-    <option name="LAST_COMMIT_MESSAGE" value="Blitt ferdig med nav bar og lagt til css for å posisjonerede elementene riktig." />
+    <MESSAGE value="Har flyttet kode til Massan så kode passer sammen." />
+    <option name="LAST_COMMIT_MESSAGE" value="Har flyttet kode til Massan så kode passer sammen." />
   </component>
 </project>

@@ -33,6 +33,10 @@ nav ul li {
     padding-left: 8px;
 }
 
+table, th, td {
+    border:1px solid black;
+}
+
 /*
 Kilder:
 

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout with Popup</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card visible">
+            <h3>Opptakskrav og poeng</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>For å søke på dette programmet må du ha generell studiekompetanse (samordnaopptak.no) eller
+                        oppfylle kravene til realkompetanse.</li>
+                    <li>Matematikk R1 og R2.</li>
+                    <li>Fysikk 1.</li>
+                    <li>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</li>
+                    <li>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke
+                        på dette studiet om du har bestått ettårig forkurs for ingeniørutdanning.</li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card visible">
+            <h3>Slik Søker du</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>Du søker på Samordna opptak med studiekode 215 503.</li>
+                    <li>15. april: ordinær søknadsfris.</li>
+                    <li>1. mars: frist for enkelte søkere.</li>
+                    <li><strong>Mer om å søke på bachelor.</strong></li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card visible">
+            <h3>Hva lærer du</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk,
+                        informatikk, fysikk og statistikk</li>
+                    <li>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i
+                        medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer. .</li>
+                    <li>Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for
+                        å få en felles forståelse av tematikken.</li>
+                    <li>Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i
+                        arbeidslivet.</li>
+                    <li>Første året velger du hvilken av disse spesialiseringene du vil ta.</li>
+                    <li>
+                        <ul>
+                            <li><strong>Statistiske og datadrevne metoder</strong></li>
+                            <li>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder
+                                til å gjøre beregninger, for eksempel av fremtidige strømpriser.</li>
+                            <li>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske
+                                høydimensjonale datatyper. Moderne metoder innen maskinlæring og kunstig intelligens
+                                står sentralt.</li>
+                            <li><strong>Vitenskapelige beregninger</strong></li>
+                            <li>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse
+                                matematiske og fysiske problemer med numeriske metoder.</li>
+                            <li>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske
+                                prosesser og annet.</li>
+                            <li><strong>Matematikk og fysikk</strong></li>
+                            <li>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig
+                                intelligens.</li>
+                            <li>Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske
+                                strukturer, representasjonsteori og kategoriteori.</li>
+                            <li>I fysikk lærer du om termodynamikk og statistisk fysikk.</li>
+                            <li><strong>Se programplan på student.oslomet.no</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="card">
+            <h3>Studiets oppbygging/ikke ferdig</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>For å søke på dette programmet må du ha generell studiekompetanse (samordnaopptak.no) eller
+                        oppfylle kravene til realkompetanse.</li>
+                    <li>Matematikk R1 og R2.</li>
+                    <li>Fysikk 1.</li>
+                    <li>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</li>
+                    <li>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke
+                        på dette studiet om du har bestått ettårig forkurs for ingeniørutdanning.</li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+            <h3>Hvordan foregår undervisningen</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>Undervisningen er en kombinasjon av</li>
+                    <li>prosjektarbeid</li>
+                    <li>workshop</li>
+                    <li>presentasjoner</li>
+                    <li>veiledninger</li>
+                    <li>diskusjoner og refleksjoner</li>
+                    <li>forelesninger</li>
+                    <li>selvstudier</li>
+                    <li>gruppearbeid</li>
+                    <li>arbeidslivsrelevant bacheloroppgave</li>
+                    <li>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
+                        studierelatert arbeid
+                        gjennom hele semesteret.</li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <h3>Hva koster det?</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li><strong>Du betaler en semesteravgift hvert semester (student.oslomet.no).</strong></li>
+                    <li><strong>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift
+                            (student.oslomet.no).</strong>
+                        Det er mulig å søke om unntak for betaling av denne studieavgiften.</li>
+                </ul>
+            </div>
+
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <h3>Hva kan du jobbe som?</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene
+                        vitenskapelige beregninger eller statistiske og datadrevne metoder. </li>
+                    <li>Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse
+                        i arbeidslivet etter bachelorstudiet. </li>
+                    <li>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet
+                        til klima, forsikring og finans, og datadrevne metoder for verdiskaping. </li>
+                    <li>Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</li>
+                </ul>
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <h3>Utveksling</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li>Du kan dra på utveksling i femte semester.</li>
+                </ul>   
+                
+            </div>
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <h3>Videre studiemuligheter ved Oslomet</h3>
+            <div class="text" style="display: none;">
+                <ul>
+                    <li><strong>Anvendt data- og informasjonsteknologi (ACIT)</strong></li>
+                    <li class="metadata">Masterprogram | 2 år | Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </div>
+            
+            <button class="read-more" onclick="openPopup(this)">Read More</button>
+        </div>
+    </div>
+
+    <div class="load-more">
+        <button id="loadMore" onclick="loadCards()">Load More</button>
+        <button id="showLess" onclick="showLess()" style="display:none;">Show Less</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="popupText">Popup content goes here.</div>
+        </div>
+    </div>
+
+    <script>
+        let currentCardCount = 3; // Start with 3 cards visible
+
+        function loadCards() {
+            const cards = document.querySelectorAll('.card');
+            for (let i = currentCardCount; i < currentCardCount + 3 && i < cards.length; i++) {
+                cards[i].classList.add('visible'); // Add the visible class to show the next cards
+            }
+            currentCardCount += 3; // Increase the count
+            updateButtons();
+        }
+
+        function showLess() {
+            currentCardCount = 3; // Reset to show only the first 3 cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => card.classList.remove('visible')); // Hide all cards
+            for (let i = 0; i < currentCardCount; i++) {
+                cards[i].classList.add('visible'); // Show the first 3 cards
+            }
+            updateButtons();
+        }
+
+        function updateButtons() {
+            const loadMoreButton = document.getElementById('loadMore');
+            const showLessButton = document.getElementById('showLess');
+            loadMoreButton.style.display = (currentCardCount >= 9) ? 'none' : 'inline-block';
+            showLessButton.style.display = (currentCardCount > 3) ? 'inline-block' : 'none';
+        }
+
+        function openPopup(button) {
+            const card = button.closest('.card');
+            const cardTitle = card.querySelector('h3').textContent; // Get the card title
+            const cardContent = card.querySelector('.text').innerHTML; // Get the card content
+            document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`; // Set the popup content
+            document.getElementById('popup').style.display = 'flex'; // Show the popup
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none'; // Hide the popup
+        }
+    </script>
+
+</body>
+
+</html>

@@ -267,69 +267,69 @@ body {
 
 /* Kanskje du er interseert i disse */
 
-  .o-list-block {
-    max-width: 800px; /* Limit the width of the list block */
-    margin: 0 left; /* Center the list block */
+.o-list-block {
+  max-width: 800px; /* Limit the width of the list block */
+  margin: 0 auto; /* Center the list block */
 }
 
 .a-headline {
-    font-size: 28px; /* Increased headline size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center; /* Center the headline */
+  font-size: 28px; /* Increased headline size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Center the headline */
 }
 
 .subject-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .subject-item {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .subject-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px; /* Increased padding for a better click area */
-    transition: background-color 0.3s, border-color 0.3s;
-    width: 100%; /* Make the link take full width of the container */
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px; /* Increased padding for a better click area */
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 100%; /* Make the link take full width of the container */
 }
 
 .subject-link:hover {
-    background-color: #f0f0f0;
-    border-color: #888;
+  background-color: #f0f0f0;
+  border-color: #888;
 }
 
 .subject-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px; /* Increase title size */
-    font-weight: bold; /* Increase title weight */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px; /* Increase title size */
+  font-weight: bold; /* Increase title weight */
 }
 
 .arrow {
-    margin-left: 10px;
-    transition: transform 0.3s;
+  margin-left: 10px;
+  transition: transform 0.3s;
 }
 
 .subject-details {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 5px;
-    display: none; /* Hide by default */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+  display: none; /* Hide by default */
 }
 
 .subject-item:hover .subject-details {
-    display: block; /* Show on hover */
+  display: block; /* Show on hover */
 }
 
 .subject-item:hover .arrow {
-    transform: rotate(180deg); /* Rotate arrow on hover */
+  transform: rotate(180deg); /* Rotate arrow on hover */
 }
 
 

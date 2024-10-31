@@ -342,27 +342,41 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
  */
 
 
-/* faq */
+/* faq and maps */
+.container-faq-map {
+width: 80%;
+display: flex;
+}
 
-/* maps */
+.faq {
+width: 75%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.map {
+  width: 10%;
+  padding-left: 5%;
+}
 
 /* video */
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .video {
-    width:100%; 
-    height:0; 
+    width: 745px; 
+    height: 418px; 
     position: relative; 
-    padding-bottom:56.25%
-
 }
 
 .video iframe {
-    width:50%; 
-    height:50%; 
+    width:100%; 
+    height:100%; 
     position: absolute; 
     top: 0; 
     left: 0;
-    frameborder:"0" 
-    border="0" 
-    scrolling="no" 
-    allowfullscreen allow="autoplay; fullscreen"
+    border: 0; 
+    border: solid;
 }

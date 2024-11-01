@@ -65,6 +65,7 @@ body {
   }
   
   /* Study year header */
+
   .studiear h4 {
     background-color: #f5f5f5;
     padding: 10px;
@@ -83,6 +84,7 @@ body {
   }
   
   /* Updated grid layout to handle 4 columns */
+  
   .subjects {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

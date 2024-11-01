@@ -1,3 +1,89 @@
+
+/* Matematisk modellering starts */
+
+.matematisk-modellering {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Center the section horizontally */
+  max-width: 1200px; /* Optional: set a max width */
+  text-align: center; /* Center text within the section */
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Space between items in the grid */
+  margin: 20px 0; /* Add vertical space between rows */
+}
+
+.info-section {
+  padding: 10px; /* Reduced padding for smaller boxes */
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s, transform 0.3s;
+  overflow: hidden;
+  text-align: center; /* Center text within each section */
+  min-width: 150px; /* Optional: set a minimum width for better appearance */
+}
+
+.info-section h3 {
+  font-size: 1.17em; /* Increased font size for titles */
+  margin-bottom: 5px;
+}
+
+.info-section p {
+  font-size: 0.9em; /* Adjusted font size for paragraph text */
+  margin: 0;
+}
+
+.info-section:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .info-row {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .info-row {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .info-row {
+      grid-template-columns: 1fr; /* 1 column for very small screens */
+  }
+  
+  .info-section h3 {
+      font-size: 1.3em; /* Slightly smaller title for small screens */
+  }
+  
+  .info-section p {
+      font-size: 0.8em; /* Slightly smaller text for small screens */
+  }
+
+  /* Additional spacing adjustments */
+  .matematisk-modellering {
+      padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .info-row {
+      margin: 10px 0; /* Reduce margin between rows */
+  }
+}
+
+
+/* Matematisk modellering starts */
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -215,8 +301,8 @@ body {
     background-color: #ffffff; /* White background for the popup */
     padding: 20px;
     border: 1px solid #888;
-    width: 600px; /* Set fixed width */
-    max-width: 80%; /* Ensure it doesn’t exceed screen width */
+    width: 80%; /* For wider screens */
+    max-width: 600px; /* Keep the max width */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
     position: absolute; /* Use absolute positioning */
     top: 50%; /* Position at the middle of the screen */
@@ -297,7 +383,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px; /* Increased padding for a better click area */
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
   width: 100%; /* Make the link take full width of the container */
 }
 

@@ -360,7 +360,7 @@ body {
   }
 
 
-/* Kanskje du er interseert i disse */
+/* Kanskje du er interseert i disse  starts*/
 
 .o-list-block {
   max-width: 800px; /* Limit the width of the list block */
@@ -412,22 +412,28 @@ body {
   transition: transform 0.3s;
 }
 
+/* Transition styles for the subject details */
 .subject-details {
   list-style-type: none;
   padding: 0;
   margin-top: 5px;
-  display: none; /* Hide by default */
+  opacity: 0; /* Initially hidden */
+  height: 0; /* Set height to 0 */
+  overflow: hidden; /* Hide overflow */
+  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
 .subject-item:hover .subject-details {
-  display: block; /* Show on hover */
+  opacity: 1; /* Fully visible */
+  height: 50px; /* Set a specific height that matches expected content */
+  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth height expansion */
 }
 
 .subject-item:hover .arrow {
   transform: rotate(180deg); /* Rotate arrow on hover */
 }
 
-
+/* Kanskje du er interseert i disse  ends*/
 
 /*
 Kilder:

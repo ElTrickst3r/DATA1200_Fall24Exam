@@ -64,11 +64,7 @@
                 <iframe title="Video Player" src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" scrolling="no" allowfullscreen allow="autoplay; fullscreen"></iframe>
             </div>
         </div>
-    </div>
-</body>
-</html>
-
-    
+    </div>    
     
         <div class="container">
             <!-- Card 1 -->
@@ -348,46 +344,47 @@
         </div>
     
         <script>
-            let currentCardCount = 3; // Start with 3 cards visible
-    
-            function loadCards() {
-                const cards = document.querySelectorAll('.card');
-                for (let i = currentCardCount; i < currentCardCount + 6 && i < cards.length; i++) {
-                    cards[i].classList.add('visible'); // Add the visible class to show the next cards
-                }
-                currentCardCount += 3; // Increase the count
-                updateButtons();
-            }
-    
-            function showLess() {
-                currentCardCount = 3; // Reset to show only the first 3 cards
-                const cards = document.querySelectorAll('.card');
-                cards.forEach(card => card.classList.remove('visible')); // Hide all cards
-                for (let i = 0; i < currentCardCount; i++) {
-                    cards[i].classList.add('visible'); // Show the first 3 cards
-                }
-                updateButtons();
-            }
-    
-            function updateButtons() {
-                const loadMoreButton = document.getElementById('loadMore');
-                const showLessButton = document.getElementById('showLess');
-                loadMoreButton.style.display = (currentCardCount >= 9) ? 'none' : 'inline-block';
-                showLessButton.style.display = (currentCardCount > 3) ? 'inline-block' : 'none';
-            }
-    
-            function openPopup(button) {
-                const card = button.closest('.card');
-                const cardTitle = card.querySelector('h3').textContent; // Get the card title
-                const cardContent = card.querySelector('.text').innerHTML; // Get the card content
-                document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`; // Set the popup content
-                document.getElementById('popup').style.display = 'flex'; // Show the popup
-            }
-    
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none'; // Hide the popup
-            }
-        </script>
+          let currentCardCount = 3; // Start with 3 cards visible
+          const cards = document.querySelectorAll('.card');
+          
+          function loadCards() {
+              cards.forEach(card => card.classList.add('visible')); // Show all cards
+              currentCardCount = cards.length; // Update current card count to total
+              updateButtons(); // Update buttons to show "Vis mindre"
+          }
+      
+          function showLess() {
+              currentCardCount = 3; // Reset to show only the first 3 cards
+              cards.forEach(card => card.classList.remove('visible')); // Hide all cards
+              for (let i = 0; i < currentCardCount; i++) {
+                  cards[i].classList.add('visible'); // Show the first 3 cards
+              }
+              updateButtons(); // Update buttons to show "Vis mer" again
+          }
+      
+          function updateButtons() {
+              const loadMoreButton = document.getElementById('loadMore');
+              const showLessButton = document.getElementById('showLess');
+              loadMoreButton.style.display = (currentCardCount < cards.length) ? 'inline-block' : 'none';
+              showLessButton.style.display = (currentCardCount > 3) ? 'inline-block' : 'none';
+          }
+      
+          function openPopup(button) {
+              const card = button.closest('.card');
+              const cardTitle = card.querySelector('h3').textContent; // Get the card title
+              const cardContent = card.querySelector('.text').innerHTML; // Get the card content
+              document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`; // Set the popup content
+              document.getElementById('popup').style.display = 'flex'; // Show the popup
+          }
+      
+          function closePopup() {
+              document.getElementById('popup').style.display = 'none'; // Hide the popup
+          }
+      
+          // Initially show the first 3 cards
+          showLess();
+      </script>
+      
 
                <!-- ---------------------FAQ-------------------------- -->   
                <div class="container-faq-map">
@@ -413,16 +410,8 @@
                       <!-- lenke inkluderer en API generert og hentet fra min Google Console-konto-->
                       </div>
                 </aside>
-                </div>
-                
-                  <!-- -------------Video-------------- -->
-                <div class="video-container">
-                  <div class="video">
-                    <iframe title="Video Player" src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" scrolling="no" allowfullscreen allow="autoplay; fullscreen" title="Tre studenter snakker om Matematisk Modellering"></iframe>
-                </div>
-                  <!-- kilde: embedded video fra OsloMets videoarkiv (https://film.oslomet.no/matematisk-modellering-og) -->
-                </div>
-
+                </div>                
+              
              <!-- --------Relaterte studier-------- -->
     
     <title>Relevante Fag</title>

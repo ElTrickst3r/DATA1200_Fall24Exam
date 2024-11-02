@@ -126,11 +126,13 @@ table, th, td {
 
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e9ecef; /* Light grey background for contrast */
-    margin: 0;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif; /* Change font family to something more professional */
+  background-color: #f4f4f4; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improved line height for better readability */
+  margin: 0; /* Remove default margins */
+  padding: 20px; /* Add some padding around the body */
+}
   
   .container {
     display: flex;
@@ -253,7 +255,7 @@ body {
   
   .text {
     font-size: 16px; /* Larger text size */
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.7; /* Improved line height for readability */
     color: #333; /* Darker text for better contrast */
     text-align: left; /* Align text to the left */
     margin: 10px 0; /* Margin above and below the text */

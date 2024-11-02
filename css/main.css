@@ -1,88 +1,91 @@
-
 /* Matematisk modellering starts */
 
+.container-wrapper {
+  display: flex;
+  gap: 20px; /* Space between content and video containers */
+  max-width: 1390px; /* Set a max width for centering */
+  margin: 0 auto; /* Center container */
+  padding: 10px; /* Reduce vertical padding and maintain side margins */
+}
+
+/* Content and Video Containers */
+.content-container {
+  flex: 2; /* Decrease flex value further to give it even less space */
+  max-width: 50%; /* Allow even less space for the content */
+  padding: 5px; /* Reduce internal padding to minimize empty space */
+}
+
+.video {
+  max-width: 100%; /* Make sure it doesn’t overflow the container */
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0; /* Set height to zero for aspect ratio */
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the container */
+  border: 0; /* Remove iframe border */
+}
+
 .matematisk-modellering {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px auto; /* Center the section horizontally */
-  max-width: 1400px; /* Optional: set a max width */
-  text-align: center; /* Center text within the section */
+  background: #ffffff; /* White background for uniformity */
+  border: 1px solid #ddd; /* Same border style as cards */
+  border-radius: 12px; /* Rounded corners */
+  padding: 15px; /* Padding for content */
+  margin: 0; /* No margin for outer container */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for uniformity */
 }
 
 .info-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px; /* Space between items in the grid */
-  margin: 20px 0; /* Add vertical space between rows */
+  display: flex; /* Arrange items in a row */
+  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
+  gap: 8px; /* Space between items for a compact layout */
+  justify-content: flex-start; /* Align items to the start */
+  margin-top: 10px; /* Add top margin to separate rows */
 }
 
+/* Adjust info-section styling to add equal spacing */
 .info-section {
-  padding: 10px; /* Reduced padding for smaller boxes */
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  transition: box-shadow 0.3s, transform 0.3s;
-  overflow: hidden;
+  flex: 1 1 30%; /* Allow three items per row; adjust basis for better fit */
+  min-width: 150px; /* Minimum width for each section */
+  padding: 10px;
+  border: 1px solid #eaeaea; /* Uniform border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for sections */
   text-align: center; /* Center text within each section */
-  min-width: 150px; /* Optional: set a minimum width for better appearance */
+  margin: 8px 0; /* Add vertical margin (top and bottom) */
 }
 
-.info-section h3 {
-  font-size: 1.17em; /* Increased font size for titles */
-  margin-bottom: 5px;
+/* Optional: Add a margin for the first info-row to avoid sticking to header */
+.info-row:first-of-type {
+  margin-top: 10px; /* Ensure first row has space from the top */
 }
 
-.info-section p {
-  font-size: 0.9em; /* Adjusted font size for paragraph text */
-  margin: 0;
-}
-
-.info-section:hover {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+/* Video Styling */
+.video-container video {
+  width: 100%; /* Ensure the video takes up the full width of its container */
+  height: auto; /* Maintain the original aspect ratio */
+  border-radius: 12px; /* Rounded corners for the video */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .info-row {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
-  }
-}
-
 @media (max-width: 900px) {
+  .container-wrapper {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  .content-container, .video-container {
+    max-width: 100%; /* Full width on small screens */
+  }
   .info-row {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    flex-direction: column; /* Stack info sections vertically on smaller screens */
   }
 }
-
-@media (max-width: 600px) {
-  .info-row {
-      grid-template-columns: 1fr; /* 1 column for very small screens */
-  }
-  
-  .info-section h3 {
-      font-size: 1.3em; /* Slightly smaller title for small screens */
-  }
-  
-  .info-section p {
-      font-size: 0.8em; /* Slightly smaller text for small screens */
-  }
-
-  /* Additional spacing adjustments */
-  .matematisk-modellering {
-      padding: 10px; /* Reduce padding on small screens */
-  }
-
-  .info-row {
-      margin: 10px 0; /* Reduce margin between rows */
-  }
-}
-
-
-/* Matematisk modellering starts */
-
-
+/* Matematisk modellering ends */
 
 * {
     box-sizing: border-box;

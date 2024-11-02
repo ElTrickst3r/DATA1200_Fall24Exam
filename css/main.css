@@ -92,10 +92,10 @@
 }
 
 nav {
+    background-color: #ffd500;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
     height: 100px;
     padding: 2% 6%;
     position: relative;
@@ -128,7 +128,8 @@ table, th, td {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e9ecef; /* Light grey background for contrast */
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 20px;
   }
   

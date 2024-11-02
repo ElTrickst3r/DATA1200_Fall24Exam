@@ -468,3 +468,50 @@ padding-right: 5%;
     border: 0; 
     border: solid;
 }
+
+.studenthistorier{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: 18px;
+  background-color: #ffd500;
+  padding: 18px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLink {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  min-width: 350px;
+}
+
+.footerLink a,
+.footerLink a:hover,
+.footerLink a:active,
+.footerLink a:visited {
+  color: white;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+.footerTopTitle {
+  font-size: 28px;
+  font-weight: 700;
+}

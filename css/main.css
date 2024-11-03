@@ -11,7 +11,6 @@
 /* Content and Video Containers */
 .content-container {
   flex: 2; /* Decrease flex value further to give it even less space */
-  max-width: 50%; /* Allow even less space for the content */
   padding: 5px; /* Reduce internal padding to minimize empty space */
 }
 
@@ -152,7 +151,6 @@ body {
     width: calc(28% - 20px); /* Adjust width for larger screens */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
     transition: transform 0.2s; /* Smooth scaling effect */
-    display: none; /* Hide all cards initially */
     text-align: center; /* Center the text inside the card */
   }
   
@@ -240,10 +238,7 @@ body {
     margin-left: 5px;
     cursor: help;
   }
-  
-  .card.visible {
-    display: block; /* Show visible cards */
-  }
+
   
   .card:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
@@ -488,6 +483,15 @@ padding-right: 5%;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.studenthistorier img{
+  margin-left: 18px;
+}
+
+.studenthistorier li {
+  margin-bottom: 18px;
+}
+
 
 footer {
   margin-top: 18px;

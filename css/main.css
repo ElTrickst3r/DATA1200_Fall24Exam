@@ -47,6 +47,8 @@
     flex-direction: column; /* Stack info sections vertically on smaller screens */
   }
 }
+
+/* Kilder: https://www.youtube.com/watch?v=2rlWBZ17Wes */
 /* Matematisk modellering ends */
 
 * {
@@ -136,17 +138,6 @@ body {
   
   /* Updated grid layout to handle 4 columns */
   
-  .subjects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  
-  /* For semesters with 3 columns */
-  .semester.three-columns .subjects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
   .subject {
     display: flex;
     flex-direction: column;
@@ -174,7 +165,7 @@ body {
   .subject-info {
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin-top: none;
   }
   
   .subject-code {
@@ -225,27 +216,11 @@ body {
     font-weight: 300;       /* Lighter weight for thinner text */
   }
   
-  .load-more {
-    text-align: center;
-    margin-top: 20px;
-  }
+  /* cards ends here: 
+   Kilde:https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s */
   
-  .load-more button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white;
-    cursor: pointer;
-    font-size: 16px; /* Larger button text */
-    transition: background-color 0.3s; /* Smooth background change */
-  }
-  
-  .load-more button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  /* Popup Styles */
+   /* Popup Styles Kilde:
+  (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -385,10 +360,11 @@ body {
   transition: height 0.3s ease, opacity 0.3s ease; /* Smooth height expansion */
 }
 
-.subject-item:hover .arrow {
+ .subject-item:hover .arrow {       
   transform: rotate(180deg); /* Rotate arrow on hover */
 }
 
+/* Kilder: https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s, https://www.youtube.com/watch?v=0WOrKIb6mMI */
 /* Kanskje du er interseert i disse  ends*/
 
 /*

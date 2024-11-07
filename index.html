@@ -61,14 +61,16 @@
         
     </div>    
     
+     <!---------- Kilder / cards and popups= (https://www.youtube.com/watch?v=9FNNkzPBFcE&t=22s)-->
+
         <div class="container">
             <!-- Card 1 -->
             <div class="card">
                 <h3>Opptakskrav og poeng</h3>
                 <div class="text" style="display: none;">
                     <ul>
-                        <li>For å søke på dette programmet må du ha generell studiekompetanse (samordnaopptak.no) eller
-                            oppfylle kravene til realkompetanse.</li>
+                        <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/" target="_blank"><strong> For å søke på dette programmet må du ha generell studiekompetanse (samordnaopptak.no)</strong></a> eller <a href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">
+                            <strong>oppfylle kravene til realkompetanse.</strong></a></li>
                         <li>Matematikk R1 og R2.</li>
                         <li>Fysikk 1.</li>
                         <li>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</li>
@@ -87,7 +89,7 @@
                         <li>Du søker på Samordna opptak med studiekode 215 503.</li>
                         <li>15. april: ordinær søknadsfris.</li>
                         <li>1. mars: frist for enkelte søkere.</li>
-                        <li><strong>Mer om å søke på bachelor.</strong></li>
+                        <li><a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier" target="_blank"><strong>Mer om å søke på bachelor.</strong></a></li>
                     </ul>
                 </div>
                 <button class="read-more" onclick="openPopup(this)">Les mer</button>
@@ -126,7 +128,7 @@
                                 <li>Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske
                                     strukturer, representasjonsteori og kategoriteori.</li>
                                 <li>I fysikk lærer du om termodynamikk og statistisk fysikk.</li>
-                                <li><strong>Se programplan på student.oslomet.no</strong></li>
+                                <li><a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST" target="_blank"><strong>Se programplan på student.oslomet.no</strong></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -137,7 +139,7 @@
     
             <!-- Card 4 -->
             <div class="card">
-                <h3>Studiets oppbygging</h3>
+                <h4>Studiets oppbygging</h4>
                 <div class="text" style="display: none;">
                   <!-- Studieår Section -->
                   <div class="studiear">
@@ -245,6 +247,7 @@
 
  <!-- Card 4 har mere men vi har laget bare eksemple om hvordan det skal se ut  -->
 
+
             <!-- Card 5 -->
             <div class="card">
                 <h3>Hvordan foregår undervisningen</h3>
@@ -273,10 +276,9 @@
                 <h3>Hva koster det?</h3>
                 <div class="text" style="display: none;">
                     <ul>
-                        <li><strong>Du betaler en semesteravgift hvert semester (student.oslomet.no).</strong></li>
-                        <li><strong>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift
-                                (student.oslomet.no).</strong>
-                            Det er mulig å søke om unntak for betaling av denne studieavgiften.</li>
+                        <li><strong>Du betaler en semesteravgift hvert semester <a href="https://student.oslomet.no/semesteravgift" target="_blank">student.oslomet.no</a>.</strong></li>
+                        <li><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" target="_blank"><strong>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no).</strong></a>
+                         Det er mulig å søke om unntak for betaling av denne studieavgiften.</li>
                     </ul>
                 </div>
     
@@ -317,7 +319,7 @@
                 <h3>Videre studiemuligheter ved Oslomet</h3>
                 <div class="text" style="display: none;">
                     <ul>
-                        <li><strong>Anvendt data- og informasjonsteknologi (ACIT)</strong></li>
+                        <li><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi"><strong>Anvendt data- og informasjonsteknologi (ACIT)</strong></a></li>
                         <li class="metadata">Masterprogram | 2 år | Pilestredet i Oslo | Heltid</li>
                     </ul>
                 </div>
@@ -329,30 +331,27 @@
         <div class="popup" id="popup">
             <div class="popup-content">
                 <span class="close-btn" onclick="closePopup()">&times;</span>
-                <div id="popupText">Popup content goes here.</div>
+                <div id="popupText">Popup content.</div>
             </div>
         </div>
+
+    <script>
+//    <!---------Kilder---= www.youtube.com/watch?v=DrshwKL_TYo, &   https://www.youtube.com/watch?v=MBaw_6cPmAw--------------- -->  
+
+        function openPopup(button) {
+            const card = button.closest('.card');
+            const cardTitle = card.querySelector('h3').textContent; 
+            const cardContent = card.querySelector('.text').innerHTML; 
+            document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`; 
+            document.getElementById('popup').style.display = 'flex'; 
+        }
     
-        <script>
-          let currentCardCount = 3; // Start with 3 cards visible
-          const cards = document.querySelectorAll('.card');
-    
-      
-          function openPopup(button) {
-              const card = button.closest('.card');
-              const cardTitle = card.querySelector('h3').textContent; // Get the card title
-              const cardContent = card.querySelector('.text').innerHTML; // Get the card content
-              document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`; // Set the popup content
-              document.getElementById('popup').style.display = 'flex'; // Show the popup
-          }
-      
-          function closePopup() {
-              document.getElementById('popup').style.display = 'none'; // Hide the popup
-          }
-      
-          // Initially show the first 3 cards
-          showLess();
-      </script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none'; 
+        }    
+        
+    </script>
+  
       
 
                <!-- ---------------------FAQ-------------------------- -->   

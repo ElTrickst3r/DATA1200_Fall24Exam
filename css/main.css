@@ -1,6 +1,6 @@
 /* Matematisk modellering starts */
 
-.container-wrapper {
+.con-wrapper {
   padding: 10px;
 }
 
@@ -21,8 +21,8 @@
   margin-top: 10px; /* Add top margin to separate rows */
 }
 
-/* Adjust info-section styling to add equal spacing */
-.info-section {
+/* Adjust info-sec styling to add equal spacing */
+.info-sec {
   flex: 1 1 30%; /* Allow three items per row; adjust basis for better fit */
   min-width: 150px; /* Minimum width for each section */
   padding: 10px;
@@ -40,7 +40,7 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 900px) {
-  .container-wrapper {
+  .con-wrapper {
     flex-direction: column; /* Stack vertically on smaller screens */
   }
   .info-row {
@@ -155,24 +155,24 @@ body {
     background-color: #ccc;
   }
   
-  .subject-name {
+  .sub-name {
     font-weight: bold;
     margin-bottom: 8px;
     text-decoration: underline;
     padding-top: 10px;
   }
   
-  .subject-info {
+  .sub-info {
     display: flex;
     justify-content: space-between;
     margin-top: none;
   }
   
-  .subject-code {
+  .sub-code {
     color: #333;
   }
   
-  .subject-points {
+  .sub-points {
     text-align: right;
   }
   
@@ -311,11 +311,11 @@ body {
   padding: 0;
 }
 
-.subject-item {
+.sub-r-item {
   margin-bottom: 15px;
 }
 
-.subject-link {
+.sub-r-link {
   display: block;
   text-decoration: none;
   color: #333;
@@ -326,12 +326,12 @@ body {
   width: 100%; /* Make the link take full width of the container */
 }
 
-.subject-link:hover {
+.sub-r-link:hover {
   background-color: #f0f0f0;
   border-color: #888;
 }
 
-.subject-title {
+.sub-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -345,7 +345,7 @@ body {
 }
 
 /* Transition styles for the subject details */
-.subject-details {
+.sub-r-details {
   list-style-type: none;
   padding: 0;
   margin-top: 5px;
@@ -355,12 +355,12 @@ body {
   transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
-.subject-item:hover .subject-details {
+.sub-r-item:hover .sub-r-details {
   height: 50px; /* Set a specific height that matches expected content */
   transition: height 0.3s ease, opacity 0.3s ease; /* Smooth height expansion */
 }
 
- .subject-item:hover .arrow {       
+ .sub-r-item:hover .arrow {       
   transform: rotate(180deg); /* Rotate arrow on hover */
 }
 

@@ -218,46 +218,45 @@ body {
    /* Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
-    background-color: rgb(0, 0, 0); /* Fallback color */
+    z-index: 1; /* Sit on top */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
     background-color: rgba(0, 0, 0, 0.6); /* Darker black with opacity */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     overflow: auto; /* Enable scroll if needed */
   }
   
   .popup-content {
     background-color: #ffffff; /* White background for the popup */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    transform: translate(-50%, -50%); /* Center it perfectly */
+    border-radius: 12px; /* Rounded corners */
+    top: 50%; /* Position at the middle of the screen */
+    left: 50%; /* Position at the middle of the screen */
     width: 80%; /* For wider screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
     max-width: 600px; /* Keep the max width */
     max-height: 90vh;
     position: absolute; /* Use absolute positioning */
-    top: 50%; /* Position at the middle of the screen */
-    left: 50%; /* Position at the middle of the screen */
     overflow: auto;
     padding: 20px;
     border: 1px solid #888;
-    transform: translate(-50%, -50%); /* Center it perfectly */
-    border-radius: 12px; /* Rounded corners */
   }
   
   .close-btn {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
     float: right;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 28px;
   }
   
   .close-btn:hover,
   .close-btn:focus {
-    cursor: pointer;
-    color: #dc3545;
     text-decoration: none;
+    color: #dc3545;
+    cursor: pointer;
   }
   
   .popup-content h2 {
@@ -267,6 +266,10 @@ body {
   }
   
   /* Media Queries for Responsiveness */
+  .popup-content {
+    width: 90%; /* Reduce popup width for small screens */
+  }
+
   @media (max-width: 520px) {
   .card {
       width: calc(100% - 20px); /* 1 card per row on small screens */
@@ -278,19 +281,16 @@ body {
     }
   }
   
-  .popup-content {
-      width: 90%; /* Reduce popup width for small screens */
-    }
-  }
+}
 
 
 /* Kanskje du er interseert i disse  starts*/
 
 .a-headline {
   margin-bottom: 20px;
+  text-align: center; /* Center the headline */
   font-size: 28px; /* Increased headline size */
   font-weight: bold;
-  text-align: center; /* Center the headline */
 }
 
 .subject-list {
@@ -600,125 +600,75 @@ nav img {
       z-index: 3;
   }
 }
-/*-----------course----------*/  
 
-.course{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-}
-h1{
-  font: size 36px; 
-  font-weight: 600;
-}
-p{
-  color: #777;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-}
-
-.row{
-margin-top: 5%;
-display: flex;
-justify-content: space-between;
-}
-.course-col{
-  flex-basis: 31%;
-  background: #fff3f3;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
-}
-h3{
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-}
-.course-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-@media(max-width: 700px){    /* possible to combine with other media quary*/
-.row{
-  flex-direction: column;
-}
-}
-
-/*---------  campus -------*/
-
-.campus{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
-}
-.campus-col{
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-.campus-col img{
-  width: 100%;
-  display: block;
-} 
-.layer{
-  background:transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover{
-  background: rgba(226,0,0,0.7);
-}
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);  /*it makes the text (h3) in the bottom and center from x axis*/
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-.layer:hover h3{     /*hover effect from bottom for h3*/
-  bottom: 49%;
-  opacity: 1;
-}
 
 /* -----------aktivitet--------- */
-.aktivitet{
+
+.aktivitet {
   width: 80%;
-  margin:auto;
+  margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 100px;  
 }
-.aktivitet-col{
-  flex-basis: 31%;
+
+/* Container for Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Column Styling */
+.aktivitet-col {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
   border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
+  text-align: center;
+  overflow: hidden;
 }
-.aktivitet-col img{
+
+/* Image Styling */
+.aktivitet-col img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
+  display: block;
 }
-.aktivitet-col p{
-  padding: 0;
-}
-.aktivitet-col h3{
+
+.aktivitet-col h3 {
   margin-top: 16px;
   margin-bottom: 15px;
-  text-align: left;
 }
+
+.aktivitet-col p {
+  padding: 0;
 }
+
+/* Media Query for Medium Screens (700px or below) */
+@media (max-width: 700px) {
+  /* Stack the .row items vertically */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Adjust image margin within .aktivitet-col */
+  .aktivitet-col img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  /* Resize the h1 heading within .aktivitet section for smaller screens */
+  .aktivitet h1 {
+    font-size: 24px;
+  }
+
+  /* Optional: Adjust column width if you want it to take the full width on smaller screens */
+  .aktivitet-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+ }
+ }

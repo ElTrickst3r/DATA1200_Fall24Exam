@@ -6,30 +6,30 @@
 
 .matematisk-modellering {
   background: #ffffff; /* White background for uniformity */
-  border: 1px solid #ddd; /* Same border style as cards */
   border-radius: 12px; /* Rounded corners */
+  border: 1px solid #ddd; /* Same border style as cards */
   padding: 15px; /* Padding for content */
-  margin: 0; /* No margin for outer container */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for uniformity */
+  margin: 0; /* No margin for outer container */
 }
 
 .info-row {
+  margin-top: 10px; /* Add top margin to separate rows */
   display: flex; /* Arrange items in a row */
-  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
   gap: 8px; /* Space between items for a compact layout */
   justify-content: flex-start; /* Align items to the start */
-  margin-top: 10px; /* Add top margin to separate rows */
+  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
 }
 
 /* Adjust info-sec styling to add equal spacing */
 .info-sec {
   flex: 1 1 30%; /* Allow three items per row; adjust basis for better fit */
+  border: 1px solid #eaeaea; /* Uniform border */
+  text-align: center; /* Center text within each section */
+  border-radius: 10px; /* Rounded corners */
   min-width: 150px; /* Minimum width for each section */
   padding: 10px;
-  border: 1px solid #eaeaea; /* Uniform border */
-  border-radius: 10px; /* Rounded corners */
   background-color: #f9f9f9; /* Light background for sections */
-  text-align: center; /* Center text within each section */
   margin: 8px 0; /* Add vertical margin (top and bottom) */
 }
 
@@ -40,12 +40,12 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 900px) {
-  .con-wrapper {
-    flex-direction: column; /* Stack vertically on smaller screens */
-  }
-  .info-row {
+ .info-row {
     flex-direction: column; /* Stack info sections vertically on smaller screens */
   }
+  .con-wrapper {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  } 
 }
 
 /* Kilder: https://www.youtube.com/watch?v=2rlWBZ17Wes */
@@ -56,11 +56,11 @@
 }
 
 nav {
-    background-color: #ffd500;
     display: flex;
+    background-color: #ffd500;
     justify-content: space-between;
-    align-items: center;
     height: 100px;
+    align-items: center;
     padding: 2% 6%;
     position: relative;
 }
@@ -70,17 +70,17 @@ nav a span {
 }
 
 nav img {
-    position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
+    position: absolute;
+    top: 50%;
     height: 36px;
+    width: 60px;
 }
 
 nav ul li {
-    list-style: none;
     display: inline-block;
+    list-style: none;
     padding-left: 8px;
 }
 
@@ -90,40 +90,40 @@ table, th, td {
 
 
 body {
-  font-family: Arial, sans-serif; /* Change font family to something more professional */
+  max-width: 1200px;
   background-color: #f4f4f4; /* Light background for better contrast */
   color: #333; /* Dark text for readability */
   line-height: 1.6; /* Improved line height for better readability */
-  padding: 20px; /* Add some padding around the body */
+  font-family: Arial, sans-serif; /* Change font family to something more professional */
+   padding: 20px; /* Add some padding around the body */
   margin: 0 auto;
-  max-width: 1200px;
-}
+ }
   
   .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center; /* Center the cards */
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   
   .card {
     background: #ffffff; /* White background for cards */
+    text-align: center; /* Center the text inside the card */
+    padding: 20px;
+    width: calc(28% - 20px); /* Adjust width for larger screens */
     border: 1px solid #ddd;
     border-radius: 12px; /* Rounded corners */
-    padding: 20px;
     margin: 10px;
-    width: calc(28% - 20px); /* Adjust width for larger screens */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
-    text-align: center; /* Center the text inside the card */
   }
   
   /* Study year header */
 
   .studiear h4 {
     background-color: #f5f5f5;
-    padding: 10px;
-    margin: 0 0 20px 0;
     font-weight: bold;
+    margin: 0 0 20px 0;
+    padding: 10px;
   }
   
   .semester {
@@ -131,10 +131,10 @@ body {
   }
   
   .semester h4 {
+    font-weight: bold;
     font-size: 1em;
     margin-bottom: 15px;
-    font-weight: bold;
-  }
+ }
   
   /* Updated grid layout to handle 4 columns */
   
@@ -146,13 +146,13 @@ body {
   }
   
   .subject::before {
+    background-color: #ccc;
     content: '';
     position: absolute;
     top: -10px;
     left: 0;
     right: 0;
     height: 1px;
-    background-color: #ccc;
   }
   
   .sub-name {
@@ -195,25 +195,21 @@ body {
   .card:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
   }
-  
-  .card h3 {
-    text-align: center; /* Center the title */
-    margin-bottom: 15px; /* Space below the title */
-  }
-  
+    
   .text {
+    margin: 10px 0; /* Margin above and below the text */
+    color: #333; /* Darker text for better contrast */
     font-size: 16px; /* Larger text size */
     line-height: 1.7; /* Improved line height for readability */
-    color: #333; /* Darker text for better contrast */
     text-align: left; /* Align text to the left */
-    margin: 10px 0; /* Margin above and below the text */
+
   }
   .metadata {
+    font-size: 14px;        /* Adjust font size to be thinner */
+    font-weight: 300;       /* Lighter weight for thinner text */
     list-style-type: none;  /* Remove bullets */
     padding: 0;
     margin: 0;
-    font-size: 14px;        /* Adjust font size to be thinner */
-    font-weight: 300;       /* Lighter weight for thinner text */
   }
   
   /* cards ends here: 
@@ -222,87 +218,78 @@ body {
    /* Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6); /* Darker black with opacity */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.6); /* Darker black with opacity */
   }
   
   .popup-content {
     background-color: #ffffff; /* White background for the popup */
-    padding: 20px;
-    border: 1px solid #888;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
     width: 80%; /* For wider screens */
     max-width: 600px; /* Keep the max width */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    max-height: 90vh;
     position: absolute; /* Use absolute positioning */
     top: 50%; /* Position at the middle of the screen */
     left: 50%; /* Position at the middle of the screen */
+    overflow: auto;
+    padding: 20px;
+    border: 1px solid #888;
     transform: translate(-50%, -50%); /* Center it perfectly */
     border-radius: 12px; /* Rounded corners */
-    max-height: 90vh;
-    overflow: auto;
   }
   
   .close-btn {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    float: right;
   }
   
   .close-btn:hover,
   .close-btn:focus {
-    color: #dc3545; /* Bootstrap danger color for close button */
-    text-decoration: none;
     cursor: pointer;
+    color: #dc3545;
+    text-decoration: none;
   }
   
   .popup-content h2 {
     margin-top: 0; /* Remove default margin */
-    color: #007bff; /* Color for heading */
+    color: #03156b; /* Color for heading */
     font-size: 24px; /* Larger heading */
   }
   
   /* Media Queries for Responsiveness */
+  @media (max-width: 520px) {
+  .card {
+      width: calc(100% - 20px); /* 1 card per row on small screens */
+    }
+
   @media (max-width: 768px) {
-    .card {
+  .card {
       width: calc(48% - 20px); /* 2 cards per row on medium screens */
     }
   }
   
-  @media (max-width: 520px) {
-    .card {
-      width: calc(100% - 20px); /* 1 card per row on small screens */
-    }
-  
-    .popup-content {
+  .popup-content {
       width: 90%; /* Reduce popup width for small screens */
-    }
-  
-    .load-more button {
-      font-size: 14px; /* Smaller button text on small screens */
     }
   }
 
 
 /* Kanskje du er interseert i disse  starts*/
 
-.o-list-block {
-  max-width: 800px; /* Limit the width of the list block */
-  margin: 0 auto; /* Center the list block */
-}
-
 .a-headline {
+  margin-bottom: 20px;
   font-size: 28px; /* Increased headline size */
   font-weight: bold;
-  margin-bottom: 20px;
   text-align: center; /* Center the headline */
 }
 

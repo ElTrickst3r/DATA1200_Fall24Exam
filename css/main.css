@@ -457,3 +457,264 @@ footer {
   font-size: 28px;
   font-weight: 700;
 }
+
+
+/* -----------aktivitet--------- */
+.aktivitet{
+ 
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #f9bc9b;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 50px;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media(max-width: 700px) {
+  .text-box h1 {
+      font-size: 20px;
+  }
+
+  .nav-links {
+      position: fixed;
+      right: -125px; /* Start hidden off the screen */
+      top: 0;
+      width: 125px;
+      height: 100vh;
+      background-color: rgba(243, 140, 96, 0.331);
+      z-index: 2;
+      transition: right 0.2s ease;
+      display: flex; /* Change display to flex for alignment */
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
+      padding-top: 60px; /* Space for menu icon */
+  }
+
+  .nav-links ul {
+      width: 100%; /* Make ul take the full width */
+      padding: 0; /* Reset padding */
+  }
+
+  .nav-links ul li {
+      width: 100%; /* Make li take full width */
+      padding: 10px 20px; /* Add padding for touch targets */
+      text-align: left; /* Align text to the left */
+  }
+
+  #menuToggle:checked ~ .nav-links {
+      right: 0; /* Slide in the menu */
+  }
+
+  .menu-icon {
+      display: block; /* Show the menu icon */
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 3;
+  }
+}
+/*-----------course----------*/  
+
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1{
+  font: size 36px; 
+  font-weight: 600;
+}
+p{
+  color: #777;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
+}
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){    /* possible to combine with other media quary*/
+.row{
+  flex-direction: column;
+}
+}
+
+/*---------  campus -------*/
+
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img{
+  width: 100%;
+  display: block;
+} 
+.layer{
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(226,0,0,0.7);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);  /*it makes the text (h3) in the bottom and center from x axis*/
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{     /*hover effect from bottom for h3*/
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* -----------aktivitet--------- */
+.aktivitet{
+  width: 80%;
+  margin:auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.aktivitet-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.aktivitet-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.aktivitet-col p{
+  padding: 0;
+}
+.aktivitet-col h3{
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+}

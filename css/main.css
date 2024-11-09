@@ -390,6 +390,7 @@ footer {
   color: white;
   background-color: #54347a;
   padding: 18px;
+  padding-top: 30px;
 }
 
 .footerTop {
@@ -639,7 +640,7 @@ h3{
   margin: auto;
   text-align: center;
   padding-top: 100px;  
-}
+ }
 
 /* Container for Columns */
 .row {
@@ -647,6 +648,7 @@ h3{
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 /* Individual Column Styling */

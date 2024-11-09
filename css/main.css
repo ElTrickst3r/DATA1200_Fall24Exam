@@ -1,7 +1,38 @@
 /*
 Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
 */
+
+* {
+  box-sizing: border-box;
+}
+
+/* header style, navigation*/
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dfcbf7;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 2% 6%;
+  position: relative;
+}
+
+nav a span {
+  flex: 0;
+}
+
+nav img {
+  height: 36px;
+  width: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 8px;
+}
 
 
 /* Matematisk modellering starts */
@@ -29,58 +60,8 @@ Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a
 
 /* Matematisk modellering ends */
 
-* {
-    box-sizing: border-box;
-}
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #dfcbf7;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    padding: 2% 6%;
-    position: relative;
-}
 
-nav a span {
-    flex: 0;
-}
-
-nav img {
-    height: 36px;
-    width: 60px;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    padding-left: 8px;
-}
-
-.table-header {
-  background-color: #dfcbf7;
-  text-align: left;
-}
-
-table {
-  border-collapse: collapse; /* ref: https://stackoverflow.com/questions/55623161/how-to-put-a-line-under-first-row-in- */
-  background-color: #f5f5ff;
-}
-
-caption {
-  text-align: left;
-  font-size: 20px;
-}
-
-th, td {
-  padding: 5px 18px;
-}
-
-tr {
-  border-bottom: 2px solid rgb(190 190 222);
-}
 
 
 body {
@@ -280,72 +261,37 @@ body {
 
 /* Kanskje du er interseert i disse  starts*/
 
-.a-headline {
-  margin-bottom: 20px;
-  font-size: 28px; /* Increased headline size */
-  font-weight: bold;
-  text-align: center; /* Center the headline */
+.relevantestudier {
+  margin: 40px 0;
 }
 
-.subject-list {
-  list-style-type: none;
-  padding: 0;
+.table-header {
+  background-color: #dfcbf7;
+  text-align: left;
 }
 
-.sub-r-item {
-  margin-bottom: 15px;
+/* for å gjøre responsiv: https://www.w3schools.com/howto/howto_css_table_responsive.asp*/
+.table-container {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse; /* ref: https://stackoverflow.com/questions/55623161/how-to-put-a-line-under-first-row-in- */
+  background-color: #f5f5ff;
 }
 
-.sub-r-link {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px; /* Increased padding for a better click area */
-  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-  width: 100%; /* Make the link take full width of the container */
+caption {
+  text-align: left;
+  font-size: 20px;
 }
 
-.sub-r-link:hover {
-  background-color: #f0f0f0;
-  border-color: #888;
+th, td {
+  padding: 5px 18px;
 }
 
-.sub-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px; /* Increase title size */
-  font-weight: bold; /* Increase title weight */
+tr {
+  border-bottom: 2px solid rgb(190 190 222);
 }
 
-.arrow {
-  margin-left: 10px;
-  transition: transform 0.3s;
-}
-
-/* Transition styles for the subject details */
-.sub-r-details {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 5px;
-  opacity: 0; /* Initially hidden */
-  height: 0; /* Set height to 0 */
-  overflow: hidden; /* Hide overflow */
-  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-}
-
-.sub-r-item:hover .sub-r-details {
-  height: 50px; /* Set a specific height that matches expected content */
-  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth height expansion */
-}
-
- .sub-r-item:hover .arrow {       
-  transform: rotate(180deg); /* Rotate arrow on hover */
-}
-
-/* Kilder: https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s, https://www.youtube.com/watch?v=0WOrKIb6mMI */
 /* Kanskje du er interseert i disse  ends*/
 
 /*
@@ -365,7 +311,11 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
 
 .faq {
   flex: 2;
-  min-width: 400px
+}
+
+.map iframe {
+  flex:1;
+  height: 400px;
 }
 
 .map {
@@ -398,11 +348,10 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
     border-radius: 5px; /* rounded borders */
 }
 
-.relevantestudier {
-  margin: 40px 0;
-}
 
-/*studenthistorier*/
+
+/* Studenthistorier starts */
+
 .studenthistorier{
   display: flex;
   flex-wrap: wrap;
@@ -412,18 +361,25 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
 
 .studenthistorier ul {
   flex: 1;
-  min-width: 400px;
 }
 
+.studenthistorier div {
+  flex:1;
+}
+
+/*responsive img https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
 .studenthistorier img{
-  margin-left: 18px;
+  width: 100%;
+  height: auto;
 }
 
 .studenthistorier li {
   margin-bottom: 18px;
 }
 
+/* Studenthistorier ends */
 
+/* Footer starts */
 footer {
   color: white;
   background-color: #54347a;
@@ -479,6 +435,8 @@ footer {
   font-size: 28px;
   font-weight: 700;
 }
+
+/* Footer ends */
 
 
 /* -----------aktivitet--------- */
@@ -577,6 +535,7 @@ nav img {
 
 
 @media(max-width: 700px) {
+
   .text-box h1 {
       font-size: 20px;
   }
@@ -661,6 +620,7 @@ h3{
 .course-col:hover{
   box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
+
 @media(max-width: 700px){    /* possible to combine with other media quary*/
 .row{
   flex-direction: column;
@@ -714,6 +674,8 @@ h3{
   bottom: 49%;
   opacity: 1;
 }
+
+
 
 /* -----------aktivitet--------- */
 .aktivitet{

@@ -632,56 +632,6 @@ h3{
 }
 }
 
-/*---------  campus -------*/
-
-.campus{
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 50px;
-}
-.campus-col{
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-.campus-col img{
-  width: 100%;
-  display: block;
-} 
-.layer{
-  background:transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-}
-.layer:hover{
-  background: rgba(226,0,0,0.7);
-}
-.layer h3{
-  width: 100%;
-  font-weight: 500;
-  color: #fff;
-  font-size: 26px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);  /*it makes the text (h3) in the bottom and center from x axis*/
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-.layer:hover h3{     /*hover effect from bottom for h3*/
-  bottom: 49%;
-  opacity: 1;
-}
-
-
-
 /* -----------aktivitet--------- */
 
 .aktivitet {
@@ -750,5 +700,18 @@ h3{
     flex: 1 1 100%;
     max-width: 100%;
   }
- }
+
+  /* Icons, facebook, insta osv */
+  div p a {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px; /* Adjust this value to increase or decrease the space */
+}
+
+div p a i {
+    font-size: 40px;
+}
+}
 }

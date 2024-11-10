@@ -458,44 +458,50 @@ footer {
 /* -----------aktivitet starts--------- */
 
 .aktivitet {
-  width: 80%;
+  width: 100%;
   margin: auto;
   text-align: center;
+ }
+
+ .page-bg{
+  text-align: center;
+  padding-top: 20px;
  }
 
 /* Container for Columns */
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap:20px;
   justify-content: center;
   padding-bottom: 30px;
 }
 
 .aktivitet-col {
-  flex: 1 1 30%;
-  max-width: 30%;
+  flex: 1 1 40%;
+  max-width: 60%;
   box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
+  padding: 10px;
 }
 
 .aktivitet-col img {
   border-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   display: block;
 }
 
 .aktivitet-col h3 {
-  margin-top: 16px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .aktivitet-col p {
-  padding: 0;
+  margin: 5px 0;
 }
 
 /* Media Query for Medium Screens (700px or below) */

@@ -8,11 +8,11 @@ Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a
 
 body {
   max-width: 1200px;
-  background-color: #f4f4f4; /* Light background for better contrast */
-  color: #333; /* Dark text for readability */
-  line-height: 1.6; /* Improved line height for better readability */
-  font-family: Arial, sans-serif; /* Change font family to something more professional */
-   padding: 20px; /* Add some padding around the body */
+  background-color: #f4f4f4; 
+  color: #333; 
+  line-height: 1.6; 
+  font-family: Arial, sans-serif; 
+   padding: 20px; 
   margin: 0 auto;
  }
 
@@ -84,7 +84,7 @@ nav ul li {
 /* Main section starts */
   .container {
     display: flex;
-    justify-content: center; /* Center the cards */
+    justify-content: center; 
     flex-wrap: wrap;
     margin: 40px 0;
   }
@@ -92,15 +92,15 @@ nav ul li {
   .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Adjust so the button is at bottom and the text at top*/
+    justify-content: space-between; 
     background: #f5f4ff;
     text-align: center;
     padding: 20px;
-    width: calc(28% - 20px); /* Adjust width for larger screens */
+    width: calc(28% - 20px); 
     border: 1px solid #ddd;
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 12px; 
     margin: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
   }
 
   .read-more {
@@ -190,17 +190,17 @@ nav ul li {
   }
     
   .text {
-    margin: 10px 0; /* Margin above and below the text */
-    color: #333; /* Darker text for better contrast */
-    font-size: 16px; /* Larger text size */
-    line-height: 1.7; /* Improved line height for readability */
-    text-align: left; /* Align text to the left */
+    margin: 10px 0; 
+    color: #333; 
+    font-size: 16px; 
+    line-height: 1.7; 
+    text-align: left; 
 
   }
   .metadata {
-    font-size: 14px;        /* Adjust font size to be thinner */
-    font-weight: 300;       /* Lighter weight for thinner text */
-    list-style-type: none;  /* Remove bullets */
+    font-size: 14px;        
+    font-weight: 300;       
+    list-style-type: none;  
     padding: 0;
     margin: 0;
   }
@@ -214,29 +214,28 @@ nav ul li {
    /* Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
-    z-index: 1; /* Sit on top */
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    background-color: rgba(0, 0, 0, 0.6); /* Darker black with opacity */
+    z-index: 1; 
+    display: none; 
+    position: fixed; 
+    background-color: rgba(0, 0, 0, 0.6); 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
   }
   
   .popup-content {
     background-color: #ffffff;
-    transform: translate(-50%, -50%); /* Center it perfectly */
-    border-radius: 12px; /* Rounded corners */
-    top: 50%; /* Position at the middle of the screen */
-    left: 50%; /* Position at the middle of the screen */
-    width: 80%; /* For wider screens */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
-    max-width: 600px; /* Keep the max width */
+    transform: translate(-50%, -50%); 
+    top: 50%; 
+    left: 50%; 
+    width: 80%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px; 
     max-height: 90vh;
-    position: absolute; /* To float over the screen */
-    overflow: auto; /* to get scroll if the content is too long*/
+    position: absolute; 
+    overflow: auto; 
     padding: 20px;
     border: 1px solid #888;
   }
@@ -256,34 +255,30 @@ nav ul li {
   }
   
   .popup-content h2 {
-    margin-top: 0; /* Remove default margin */
-    color: #03156b; /* Color for heading */
-    font-size: 24px; /* Larger heading */
+    margin-top: 0; 
+    color: #03156b; 
+    font-size: 24px; 
   }
   
   .popup-content {
-    width: 90%; /* Reduce popup width for small screens */
+    width: 90%; 
   }
 
 /*Media Queries for Responsiveness kilde: https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/  
   @media screen and (max-width: 768px) {
     .card {
-        width: calc(48% - 20px); /* 2 cards per row on medium screens */
+        width: calc(48% - 20px); /* 2 cards on medium screens */
       }
     .studenthistorier {
-        flex-direction: column; /* make image go under the text*/
+        flex-direction: column;
       }
   }
 
   @media screen and (max-width: 520px) {
     .card {
-        width: 100%; /* 1 card per row on small screens */
+        width: 100%; /* 1 card  on small screens */
       }
-
-     
   }
-
-
     
 /* Main section ends */
 
@@ -310,6 +305,7 @@ nav ul li {
 
 
 /* Faglig leder starts */
+
 .fagligleder {
   display: flex;
   flex-wrap: wrap;
@@ -345,6 +341,7 @@ nav ul li {
 /* Faglig leder ends */
 
 /* Kanskje du er interseert i disse  starts*/
+
 .relevantestudier {
   margin: 40px 0;
 }
@@ -458,7 +455,7 @@ footer {
 /* Footer ends */
 
 
-/* -----------aktivitet--------- */
+/* -----------aktivitet starts--------- */
 
 .aktivitet {
   width: 80%;
@@ -475,7 +472,6 @@ footer {
   padding-bottom: 30px;
 }
 
-/* Individual Column Styling */
 .aktivitet-col {
   flex: 1 1 30%;
   max-width: 30%;
@@ -485,12 +481,11 @@ footer {
   overflow: hidden;
 }
 
-/* Image Styling */
 .aktivitet-col img {
+  border-radius: 10px;
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
   display: block;
 }
 
@@ -504,24 +499,21 @@ footer {
 }
 
 /* Media Query for Medium Screens (700px or below) */
+
 @media (max-width: 700px) {
-  /* Stack the .row items vertically */
   .row {
     flex-direction: column;
   }
 
-  /* Adjust image margin within .aktivitet-col */
   .aktivitet-col img {
     margin-left: 0;
     margin-right: 15px;
   }
 
-  /* Resize the h1 heading within .aktivitet section for smaller screens */
   .aktivitet h1 {
     font-size: 24px;
   }
 
-  /* Optional: Adjust column width if you want it to take the full width on smaller screens */
   .aktivitet-col {
     flex: 1 1 100%;
     max-width: 100%;
@@ -533,13 +525,12 @@ footer {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 20px; /* Adjust this value to increase or decrease the space */
+    gap: 20px; 
   }
 
   div p a i {
       font-size: 40px;
   }
 }
-
 
 /* Accessibility-siden*/

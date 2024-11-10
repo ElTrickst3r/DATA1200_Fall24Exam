@@ -9,6 +9,22 @@
 </head>
 
 <body>
+    <script>
+        function openPopup(button) {
+            const card = button.closest('.card');
+            const cardTitle = card.querySelector('h3').textContent;
+            const cardContent = card.querySelector('.text').innerHTML;
+            document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`;
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+    </script>
+    <!---------Kilder script---= www.youtube.com/watch?v=DrshwKL_TYo, &   https://www.youtube.com/watch?v=MBaw_6cPmAw--------------- --  ** -->
+
     <header>
         <nav>
             <a href="https://www.oslomet.no/studier/studieoversikt"><span>
@@ -22,7 +38,6 @@
         </nav>
     </header>
     <div class="page-background">
-
         <div>
             <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
             <h2>Bachelorprogram</h2>
@@ -352,25 +367,6 @@
         <!---------- ** Kilder / cards and popups= (https://www.youtube.com/watch?v=9FNNkzPBFcE&t=22s)  **-->
 
 
-        <script>
-
-
-            function openPopup(button) {
-                const card = button.closest('.card');
-                const cardTitle = card.querySelector('h3').textContent;
-                const cardContent = card.querySelector('.text').innerHTML;
-                document.getElementById('popupText').innerHTML = `<h2>${cardTitle}</h2><p>${cardContent}</p>`;
-                document.getElementById('popup').style.display = 'flex';
-            }
-
-            function closePopup() {
-                document.getElementById('popup').style.display = 'none';
-            }
-
-        </script>
-        <!---------Kilder script---= www.youtube.com/watch?v=DrshwKL_TYo, &   https://www.youtube.com/watch?v=MBaw_6cPmAw--------------- --  ** -->
-
-
         <!-- ---------------------FAQ-------------------------- -->
         <div class="container-faq-map">
             <div class="faq">
@@ -421,14 +417,22 @@
             </aside>
         </div>
 
-        <!-- --------video-------- -->
-        <div class="video-container">
-            <div class="video">
-                <iframe title="Video Player"
-                    src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" scrolling="no"
-                    allowfullscreen allow="autoplay; fullscreen"></iframe>
+        <!-- --------Faglig leder-------- -->
+        <h2>Faglig leder</h2>
+        <a href ="https://www.oslomet.no/om/ansatt/krhel3944/" class="fagligleder-link">
+            <div class="fagligleder">
+                <div class="fagligleder-img-container">
+                    <img src="media/Kristoffer Herland.webp" alt="Kristoffer Herland">
+                </div>
+                
+                <ul>
+                    <li>Kristoffer Herland Hellton</li>
+                    <li>førsteamanuensis</li>
+                    <li>+47 672 37 240</li>
+                    <li>kristoffer.hellton@oslomet.no</li>
+                </ul>
             </div>
-        </div>
+        </a>
 
         <!-- --------Relaterte studier-------- -->
 
@@ -437,8 +441,6 @@
                 <span>Du er kanskje også interessert i disse?</span>
             </h2>
             <div class="table-container">
-
-
                 <table style="width:100%">
                     <caption>Relevante fag</caption>
                     <tr class="table-header">
@@ -536,13 +538,11 @@
             </ul>
 
             <div>
-                <img src="https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxlarge/1/6/4/1/401461-1-nor-NO/613c6efdb147-matematikk_oslomet_smilefjes.jpg"
+                <img src="media/Matematikk modellering.webp"
                     alt="Oslomet mad">
             </div>
         </div>
-
     </div>
-
 
     <!-- footer -->
     <footer>

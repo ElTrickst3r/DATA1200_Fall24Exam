@@ -6,7 +6,20 @@ Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1200px;
+  background-color: #f4f4f4; /* Light background for better contrast */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Improved line height for better readability */
+  font-family: Arial, sans-serif; /* Change font family to something more professional */
+   padding: 20px; /* Add some padding around the body */
+  margin: 0 auto;
+ }
+
 /* header style, navigation*/
+/* Kilder: nav bar:
+https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
+ */
 
 nav {
   display: flex;
@@ -35,7 +48,7 @@ nav ul li {
 }
 
 
-/* Matematisk modellering starts */
+/* Info starts */
 
 .page-background {
   background-color: white;
@@ -57,23 +70,10 @@ nav ul li {
 .info-item {
   flex: 1;
 }
-
-/* Matematisk modellering ends */
-
+/* Info ends */
 
 
-
-
-body {
-  max-width: 1200px;
-  background-color: #f4f4f4; /* Light background for better contrast */
-  color: #333; /* Dark text for readability */
-  line-height: 1.6; /* Improved line height for better readability */
-  font-family: Arial, sans-serif; /* Change font family to something more professional */
-   padding: 20px; /* Add some padding around the body */
-  margin: 0 auto;
- }
-  
+/* Main section starts */
   .container {
     display: flex;
     justify-content: center; /* Center the cards */
@@ -82,6 +82,9 @@ body {
   }
   
   .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust so the button is at bottom and the text at top*/
     background: #f5f4ff;
     text-align: center;
     padding: 20px;
@@ -90,6 +93,19 @@ body {
     border-radius: 12px; /* Rounded corners */
     margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+
+  .read-more {
+    background-color: #cfcff1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+
+  .read-more:hover {
+    cursor: pointer;
+    background-color: #dfcbf7;
+    font-weight: bold;
   }
   
   /* Study year header */
@@ -165,11 +181,6 @@ body {
     margin-left: 5px;
     cursor: help;
   }
-
-  
-  .card:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
-  }
     
   .text {
     margin: 10px 0; /* Margin above and below the text */
@@ -187,9 +198,12 @@ body {
     margin: 0;
   }
   
+
   /* cards ends here: 
    Kilde:https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s */
-  
+
+
+
    /* Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
@@ -240,33 +254,85 @@ body {
     font-size: 24px; /* Larger heading */
   }
   
-  /* Media Queries for Responsiveness */
   .popup-content {
     width: 90%; /* Reduce popup width for small screens */
   }
 
-  @media (max-width: 520px) {
-  .card {
-      width: calc(100% - 20px); /* 1 card per row on small screens */
-    }
-
-  @media (max-width: 768px) {
-  .card {
-      width: calc(48% - 20px); /* 2 cards per row on medium screens */
-    }
+/*Media Queries for Responsiveness kilde: https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/  
+  @media screen and (max-width: 768px) {
+    .card {
+        width: calc(48% - 20px); /* 2 cards per row on medium screens */
+      }
   }
-  
+
+  @media screen and (max-width: 520px) {
+    .card {
+        width: 100%; /* 1 card per row on small screens */
+      }
+  }
+
+
+    
+/* Main section ends */
+
+/* Ofte stilte spørsmål starts */
+.container-faq-map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
+.faq {
+  flex: 2;
+}
+
+.map iframe {
+  flex:1;
+  height: 400px;
+}
+
+.map {
+  flex: 1
+}
+/* Ofte stilte spørsmål ends */
+
+
+/* Faglig leder starts */
+.fagligleder {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #f5f5ff;
+  transition: 0.5s; /* for at det bytter farge saktere https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
+}
+
+.fagligleder:hover {
+  background-color: #dfcbf7;
+}
+
+.fagligleder ul {
+  flex: 2;
+}
+
+.fagligleder-img-container {
+  max-width: 150px;
+}
+
+/*responsive img https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
+.fagligleder img{
+  width: 100%;
+  height: auto;
+}
+
+.fagligleder li {
+  list-style: none;
+  margin-bottom: 18px;
+}
+/* Faglig leder ends */
 
 /* Kanskje du er interseert i disse  starts*/
-
-.a-headline {
-  margin-bottom: 20px;
-  text-align: center; /* Center the headline */
-  font-size: 28px; /* Increased headline size */
-  font-weight: bold;
-}
 .relevantestudier {
   margin: 40px 0;
 }
@@ -280,6 +346,7 @@ body {
 .table-container {
   overflow-x: auto;
 }
+
 table {
   border-collapse: collapse; /* ref: https://stackoverflow.com/questions/55623161/how-to-put-a-line-under-first-row-in- */
   background-color: #f5f5ff;
@@ -299,62 +366,6 @@ tr {
 }
 
 /* Kanskje du er interseert i disse  ends*/
-
-/*
-Kilder:
-
-nav bar:
-https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
- */
-
-
-/* faq and maps */
-.container-faq-map {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-
-.faq {
-  flex: 2;
-}
-
-.map iframe {
-  flex:1;
-  height: 400px;
-}
-
-.map {
-  flex: 1
-}
-
-/* video */
-.video-container {
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center; /* source: w3schools - https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
-}
-
-.video { /*source for aspect ratio: https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative; 
-}
-
-.video iframe {
-    width: 87.5%;
-    height: 87.5%;
-    position: absolute;
-    top: 6.25%;
-    left: 6.25%;
-    right: 6.25%;
-    border: 2px;
-    border-color: #ccc; 
-    border-radius: 5px; /* rounded borders */
-}
-
-
 
 /* Studenthistorier starts */
 

@@ -219,7 +219,7 @@ nav ul li {
   }
   
   .popup-content {
-    background-color: #ffffff; /* White background for the popup */
+    background-color: #ffffff;
     transform: translate(-50%, -50%); /* Center it perfectly */
     border-radius: 12px; /* Rounded corners */
     top: 50%; /* Position at the middle of the screen */
@@ -228,8 +228,8 @@ nav ul li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
     max-width: 600px; /* Keep the max width */
     max-height: 90vh;
-    position: absolute; /* Use absolute positioning */
-    overflow: auto;
+    position: absolute; /* To float over the screen */
+    overflow: auto; /* to get scroll if the content is too long*/
     padding: 20px;
     border: 1px solid #888;
   }
@@ -463,7 +463,6 @@ footer {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;  
  }
 
 /* Container for Columns */
@@ -534,9 +533,9 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 20px; /* Adjust this value to increase or decrease the space */
-}
+  }
 
-div p a i {
-    font-size: 40px;
-}
+  div p a i {
+      font-size: 40px;
+  }
 }

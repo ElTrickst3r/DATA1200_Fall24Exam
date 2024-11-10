@@ -270,12 +270,17 @@ nav ul li {
     .card {
         width: calc(48% - 20px); /* 2 cards per row on medium screens */
       }
+    .studenthistorier {
+        flex-direction: column; /* make image go under the text*/
+      }
   }
 
   @media screen and (max-width: 520px) {
     .card {
         width: 100%; /* 1 card per row on small screens */
       }
+
+     
   }
 
 
@@ -378,17 +383,8 @@ tr {
 
 .studenthistorier{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
-}
-
-.studenthistorier ul {
-  flex: 1;
-}
-
-.studenthistorier div {
-  flex:1;
+  gap: 18px;
 }
 
 /*responsive img https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
@@ -444,7 +440,6 @@ footer {
   color: white;
   padding: 18px;
   margin-bottom: 18px;
-  min-width: 350px;
 }
 
 .footerLink a,
@@ -453,7 +448,6 @@ footer {
 .footerLink a:visited {
   color: white;
   text-decoration: none;
-  min-width: 100px;
 }
 
 .footerTopTitle {

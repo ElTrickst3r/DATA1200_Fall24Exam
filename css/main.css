@@ -1,93 +1,10 @@
-/* Matematisk modellering starts */
-
-.con-wrapper {
-  padding: 10px;
-}
-
-.matematisk-modellering {
-  background: #ffffff; /* White background for uniformity */
-  border-radius: 12px; /* Rounded corners */
-  border: 1px solid #ddd; /* Same border style as cards */
-  padding: 15px; /* Padding for content */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow for uniformity */
-  margin: 0; /* No margin for outer container */
-}
-
-.info-row {
-  margin-top: 10px; /* Add top margin to separate rows */
-  display: flex; /* Arrange items in a row */
-  gap: 8px; /* Space between items for a compact layout */
-  justify-content: flex-start; /* Align items to the start */
-  flex-wrap: wrap; /* Wrap items to the next line if they overflow */
-}
-
-/* Adjust info-sec styling to add equal spacing */
-.info-sec {
-  flex: 1 1 30%; /* Allow three items per row; adjust basis for better fit */
-  border: 1px solid #eaeaea; /* Uniform border */
-  text-align: center; /* Center text within each section */
-  border-radius: 10px; /* Rounded corners */
-  min-width: 150px; /* Minimum width for each section */
-  padding: 10px;
-  background-color: #f9f9f9; /* Light background for sections */
-  margin: 8px 0; /* Add vertical margin (top and bottom) */
-}
-
-/* Optional: Add a margin for the first info-row to avoid sticking to header */
-.info-row:first-of-type {
-  margin-top: 10px; /* Ensure first row has space from the top */
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 900px) {
- .info-row {
-    flex-direction: column; /* Stack info sections vertically on smaller screens */
-  }
-  .con-wrapper {
-    flex-direction: column; /* Stack vertically on smaller screens */
-  } 
-}
-
-/* Kilder: https://www.youtube.com/watch?v=2rlWBZ17Wes */
-/* Matematisk modellering ends */
+/*
+Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-nav {
-    display: flex;
-    background-color: #ffd500;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    padding: 2% 6%;
-    position: relative;
-}
-
-nav a span {
-    flex: 0;
-}
-
-nav img {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    height: 36px;
-    width: 60px;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    padding-left: 8px;
-}
-
-table, th, td {
-    border:1px solid black;
-}
-
 
 body {
   max-width: 1200px;
@@ -98,23 +15,105 @@ body {
    padding: 20px; /* Add some padding around the body */
   margin: 0 auto;
  }
-  
+
+/* header style, navigation*/
+/* Kilder: nav bar:
+https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
+ */
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dfcbf7;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding: 2% 6%;
+  position: relative;
+}
+
+nav a {
+  flex: 1;
+}
+
+nav img {
+  height: 36px;
+  width: 60px;
+}
+
+nav ul {
+  flex: 1;
+}
+
+.logo {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-left: 8px;
+}
+
+
+/* Info starts */
+
+.page-background {
+  background-color: white;
+  padding: 30px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.info-item-first {
+  flex: 2;
+}
+
+.info-item {
+  flex: 1;
+}
+/* Info ends */
+
+
+/* Main section starts */
   .container {
     display: flex;
     justify-content: center; /* Center the cards */
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin: 40px 0;
   }
   
   .card {
-    background: #ffffff; /* White background for cards */
-    text-align: center; /* Center the text inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust so the button is at bottom and the text at top*/
+    background: #f5f4ff;
+    text-align: center;
     padding: 20px;
     width: calc(28% - 20px); /* Adjust width for larger screens */
     border: 1px solid #ddd;
     border-radius: 12px; /* Rounded corners */
     margin: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  }
+
+  .read-more {
+    background-color: #cfcff1;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+
+  .read-more:hover {
+    cursor: pointer;
+    background-color: #dfcbf7;
+    font-weight: bold;
   }
   
   /* Study year header */
@@ -190,11 +189,6 @@ body {
     margin-left: 5px;
     cursor: help;
   }
-
-  
-  .card:hover {
-    transform: scale(1.05); /* Slightly scale up on hover */
-  }
     
   .text {
     margin: 10px 0; /* Margin above and below the text */
@@ -212,52 +206,54 @@ body {
     margin: 0;
   }
   
+
   /* cards ends here: 
    Kilde:https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s */
-  
+
+
+
    /* Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
-    background-color: rgb(0, 0, 0); /* Fallback color */
+    z-index: 1; /* Sit on top */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
     background-color: rgba(0, 0, 0, 0.6); /* Darker black with opacity */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     overflow: auto; /* Enable scroll if needed */
   }
   
   .popup-content {
-    background-color: #ffffff; /* White background for the popup */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
-    width: 80%; /* For wider screens */
-    max-width: 600px; /* Keep the max width */
-    max-height: 90vh;
-    position: absolute; /* Use absolute positioning */
-    top: 50%; /* Position at the middle of the screen */
-    left: 50%; /* Position at the middle of the screen */
-    overflow: auto;
-    padding: 20px;
-    border: 1px solid #888;
+    background-color: #ffffff;
     transform: translate(-50%, -50%); /* Center it perfectly */
     border-radius: 12px; /* Rounded corners */
+    top: 50%; /* Position at the middle of the screen */
+    left: 50%; /* Position at the middle of the screen */
+    width: 80%; /* For wider screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Softer shadow */
+    max-width: 600px; /* Keep the max width */
+    max-height: 90vh;
+    position: absolute; /* To float over the screen */
+    overflow: auto; /* to get scroll if the content is too long*/
+    padding: 20px;
+    border: 1px solid #888;
   }
   
   .close-btn {
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
     float: right;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 28px;
   }
   
   .close-btn:hover,
   .close-btn:focus {
-    cursor: pointer;
-    color: #dc3545;
     text-decoration: none;
+    color: #dc3545;
+    cursor: pointer;
   }
   
   .popup-content h2 {
@@ -266,169 +262,159 @@ body {
     font-size: 24px; /* Larger heading */
   }
   
-  /* Media Queries for Responsiveness */
-  @media (max-width: 520px) {
-  .card {
-      width: calc(100% - 20px); /* 1 card per row on small screens */
-    }
-
-  @media (max-width: 768px) {
-  .card {
-      width: calc(48% - 20px); /* 2 cards per row on medium screens */
-    }
-  }
-  
   .popup-content {
-      width: 90%; /* Reduce popup width for small screens */
-    }
+    width: 90%; /* Reduce popup width for small screens */
+  }
+
+/*Media Queries for Responsiveness kilde: https://www.w3schools.com/css/css3_mediaqueries_ex.asp*/  
+  @media screen and (max-width: 768px) {
+    .card {
+        width: calc(48% - 20px); /* 2 cards per row on medium screens */
+      }
+  }
+
+  @media screen and (max-width: 520px) {
+    .card {
+        width: 100%; /* 1 card per row on small screens */
+      }
   }
 
 
-/* Kanskje du er interseert i disse  starts*/
+    
+/* Main section ends */
 
-.a-headline {
-  margin-bottom: 20px;
-  font-size: 28px; /* Increased headline size */
-  font-weight: bold;
-  text-align: center; /* Center the headline */
-}
-
-.subject-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sub-r-item {
-  margin-bottom: 15px;
-}
-
-.sub-r-link {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px; /* Increased padding for a better click area */
-  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-  width: 100%; /* Make the link take full width of the container */
-}
-
-.sub-r-link:hover {
-  background-color: #f0f0f0;
-  border-color: #888;
-}
-
-.sub-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px; /* Increase title size */
-  font-weight: bold; /* Increase title weight */
-}
-
-.arrow {
-  margin-left: 10px;
-  transition: transform 0.3s;
-}
-
-/* Transition styles for the subject details */
-.sub-r-details {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 5px;
-  opacity: 0; /* Initially hidden */
-  height: 0; /* Set height to 0 */
-  overflow: hidden; /* Hide overflow */
-  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
-}
-
-.sub-r-item:hover .sub-r-details {
-  height: 50px; /* Set a specific height that matches expected content */
-  transition: height 0.3s ease, opacity 0.3s ease; /* Smooth height expansion */
-}
-
- .sub-r-item:hover .arrow {       
-  transform: rotate(180deg); /* Rotate arrow on hover */
-}
-
-/* Kilder: https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s, https://www.youtube.com/watch?v=0WOrKIb6mMI */
-/* Kanskje du er interseert i disse  ends*/
-
-/*
-Kilder:
-
-nav bar:
-https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
- */
-
-
-/* faq and maps */
+/* Ofte stilte spørsmål starts */
 .container-faq-map {
-width: 80%;
-display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .faq {
-width: 75%;
-padding-left: 5%;
-padding-right: 5%;
+  flex: 2;
+}
+
+.map iframe {
+  flex:1;
+  height: 400px;
 }
 
 .map {
-  width: 10%;
-  padding-left: 5%;
+  flex: 1
 }
+/* Ofte stilte spørsmål ends */
 
-/* video */
-.video-container {
+
+/* Faglig leder starts */
+.fagligleder {
   display: flex;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center; /* source: w3schools - https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #f5f5ff;
+  transition: 0.5s; /* for at det bytter farge saktere https://www.w3schools.com/howto/howto_css_transition_hover.asp*/
 }
 
-.video { /*source for aspect ratio: https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative; 
+.fagligleder:hover {
+  background-color: #dfcbf7;
 }
 
-.video iframe {
-    width: 87.5%;
-    height: 87.5%;
-    position: absolute;
-    top: 6.25%;
-    left: 6.25%;
-    right: 6.25%;
-    border: 2px;
-    border-color: #ccc; 
-    border-radius: 5px; /* rounded borders */
+.fagligleder ul {
+  flex: 2;
 }
 
-/*studenthistorier*/
+.fagligleder-img-container {
+  max-width: 150px;
+}
+
+/*responsive img https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
+.fagligleder img{
+  width: 100%;
+  height: auto;
+}
+
+.fagligleder li {
+  list-style: none;
+  margin-bottom: 18px;
+}
+/* Faglig leder ends */
+
+/* Kanskje du er interseert i disse  starts*/
+.relevantestudier {
+  margin: 40px 0;
+}
+
+.table-header {
+  background-color: #dfcbf7;
+  text-align: left;
+}
+
+/* for å gjøre responsiv: https://www.w3schools.com/howto/howto_css_table_responsive.asp*/
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse; /* ref: https://stackoverflow.com/questions/55623161/how-to-put-a-line-under-first-row-in- */
+  background-color: #f5f5ff;
+}
+
+caption {
+  text-align: left;
+  font-size: 20px;
+}
+
+th, td {
+  padding: 5px 18px;
+}
+
+tr {
+  border-bottom: 2px solid rgb(190 190 222);
+}
+
+/* Kanskje du er interseert i disse  ends*/
+
+/* Studenthistorier starts */
+
 .studenthistorier{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.studenthistorier ul {
+  flex: 1;
+}
+
+.studenthistorier div {
+  flex:1;
+}
+
+/*responsive img https://www.w3schools.com/howto/howto_css_image_responsive.asp*/
 .studenthistorier img{
-  margin-left: 18px;
+  width: 100%;
+  height: auto;
 }
 
 .studenthistorier li {
   margin-bottom: 18px;
 }
 
+/* Studenthistorier ends */
 
+/* Footer starts */
 footer {
-  margin-top: 18px;
-  background-color: #ffd500;
+  color: white;
+  background-color: #54347a;
   padding: 18px;
+  padding-top: 30px;
 }
 
 .footerTop {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
@@ -437,7 +423,21 @@ footer {
 
 .footerContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footerContent a {
+  color: white;
+}
+
+.footerContent a:hover {
+  color: #dfcbf7;
+}
+
+.footerContent li {
+  list-style: none;
+  margin-bottom: 8px;
 }
 
 .footerLink {
@@ -460,4 +460,90 @@ footer {
 .footerTopTitle {
   font-size: 28px;
   font-weight: 700;
+}
+
+/* Footer ends */
+
+
+/* -----------aktivitet--------- */
+
+.aktivitet {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+ }
+
+/* Container for Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+/* Individual Column Styling */
+.aktivitet-col {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.aktivitet-col img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.aktivitet-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.aktivitet-col p {
+  padding: 0;
+}
+
+/* Media Query for Medium Screens (700px or below) */
+@media (max-width: 700px) {
+  /* Stack the .row items vertically */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Adjust image margin within .aktivitet-col */
+  .aktivitet-col img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  /* Resize the h1 heading within .aktivitet section for smaller screens */
+  .aktivitet h1 {
+    font-size: 24px;
+  }
+
+  /* Optional: Adjust column width if you want it to take the full width on smaller screens */
+  .aktivitet-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Icons, facebook, insta osv */
+  div p a {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px; /* Adjust this value to increase or decrease the space */
+  }
+
+  div p a i {
+      font-size: 40px;
+  }
 }

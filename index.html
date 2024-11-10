@@ -24,6 +24,14 @@
             document.getElementById('popup').style.display = 'none';
         }
 
+
+/* kilde: 3rd answer here: https://stackoverflow.com/questions/1481626/how-to-handle-esc-keydown-on-javascript-popup-window */
+        document.addEventListener('keydown', function(e) {
+            if(e.key === "Escape") {
+                closePopup();
+            }
+        });
+
     </script>
     <!---------Kilder script---= www.youtube.com/watch?v=DrshwKL_TYo, &   https://www.youtube.com/watch?v=MBaw_6cPmAw--------------- --  ** -->
 

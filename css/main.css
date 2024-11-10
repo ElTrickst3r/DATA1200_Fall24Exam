@@ -309,6 +309,7 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
 
 
 /* faq and maps */
+
 .container-faq-map {
   display: flex;
   flex-wrap: wrap;
@@ -328,31 +329,7 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
   flex: 1
 }
 
-/* video */
-.video-container {
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  justify-content: center; /* source: w3schools - https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
-}
 
-.video { /*source for aspect ratio: https://www.w3schools.com/howto/howto_css_aspect_ratio.asp */
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative; 
-}
-
-.video iframe {
-    width: 87.5%;
-    height: 87.5%;
-    position: absolute;
-    top: 6.25%;
-    left: 6.25%;
-    right: 6.25%;
-    border: 2px;
-    border-color: #ccc; 
-    border-radius: 5px; /* rounded borders */
-}
 
 
 

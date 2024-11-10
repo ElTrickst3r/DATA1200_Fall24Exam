@@ -32,13 +32,21 @@ nav {
   position: relative;
 }
 
-nav a span {
-  flex: 0;
+nav a {
+  flex: 1;
 }
 
 nav img {
   height: 36px;
   width: 60px;
+}
+
+nav ul {
+  flex: 1;
+}
+
+.logo {
+  text-align: center;
 }
 
 nav ul li {

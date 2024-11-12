@@ -24,7 +24,7 @@ https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #dfcbf7;
+  background-color: #54347a;
   justify-content: space-between;
   height: 100px;
   align-items: center;
@@ -32,7 +32,11 @@ nav {
   position: relative;
 }
 
+nav a:hover {
+  color: #dfcbf7;
+}
 nav a {
+  color: white;
   flex: 1;
 }
 

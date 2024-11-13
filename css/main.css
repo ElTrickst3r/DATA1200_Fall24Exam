@@ -449,6 +449,113 @@ tr {
 
 /* Studenthistorier ends */
 
+
+/* -----------aktivitet starts--------- */
+
+.aktivitet {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+ }
+h1{
+  font-size: 2em;
+}
+ .page-bg{
+  text-align: center;
+  background-color: white;
+  padding-top: 20px;
+ }
+
+/* Container for Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.aktivitet-col {
+  flex: 1 1 40%;
+  max-width: 60%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.aktivitet-col img {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.aktivitet-col {
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+.aktivitet-col:hover img {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.aktivitet-col:hover {
+  background-color: rgba(205, 168, 249, 0.2);
+}
+
+.aktivitet-col h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.aktivitet-col p {
+  margin: 15px 0;
+  adding-top: 10px 0;
+}
+
+/* Media Query for Medium Screens (700px or below) */
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .aktivitet-col img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .aktivitet h1 {
+    font-size: 24px;
+  }
+
+  .aktivitet-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* Icons, facebook, insta osv */
+  div p a {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  div p a i {
+      font-size: 40px;
+  }
+}
+
+/* Accessibility-siden*/
+
+
 /* Footer starts */
 footer {
   color: white;
@@ -506,109 +613,3 @@ footer {
 }
 
 /* Footer ends */
-
-
-/* -----------aktivitet starts--------- */
-
-.aktivitet {
-  width: 100%;
-  margin: auto;
-  text-align: center;
- }
-h1{
-  font-size: 2em;
-}
- .page-bg{
-  text-align: center;
-  background-color: white;
-  padding-top: 20px;
- }
-
-/* Container for Columns */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap:20px;
-  justify-content: center;
-  padding-bottom: 30px;
-}
-
-.aktivitet-col {
-  flex: 1 1 40%;
-  max-width: 60%;
-  box-sizing: border-box;
-  border-radius: 10px;
-  text-align: center;
-  overflow: hidden;
-  padding: 10px;
-}
-
-.aktivitet-col img {
-  border-radius: 10px;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-}
-
-.aktivitet-col {
-  border-radius: 10px;
-  overflow: hidden; 
-}
-
-.aktivitet-col:hover img {
-  transform: scale(1.05); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.aktivitet-col:hover {
-  background-color: rgba(142, 72, 227, 0.2);
-}
-
-.aktivitet-col h2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.aktivitet-col p {
-  margin: 15px 0;
-  adding-top: 10px 0;
-}
-
-/* Media Query for Medium Screens (700px or below) */
-
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .aktivitet-col img {
-    margin-left: 0;
-    margin-right: 15px;
-  }
-
-  .aktivitet h1 {
-    font-size: 24px;
-  }
-
-  .aktivitet-col {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  /* Icons, facebook, insta osv */
-  div p a {
-    color: #333;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 20px; 
-  }
-
-  div p a i {
-      font-size: 40px;
-  }
-}
-
-/* Accessibility-siden*/

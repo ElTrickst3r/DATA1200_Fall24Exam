@@ -572,7 +572,8 @@ h1{
 }
 
 .aktivitet-col p {
-  margin: 12px 0;
+  margin: 15px 0;
+  adding-top: 10px 0;
 }
 
 /* Media Query for Medium Screens (700px or below) */

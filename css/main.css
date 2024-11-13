@@ -515,7 +515,9 @@ footer {
   margin: auto;
   text-align: center;
  }
-
+h1{
+  font-size: 2em;
+}
  .page-bg{
   text-align: center;
   background-color: white;
@@ -570,7 +572,7 @@ footer {
 }
 
 .aktivitet-col p {
-  margin: 5px 0;
+  margin: 12px 0;
 }
 
 /* Media Query for Medium Screens (700px or below) */

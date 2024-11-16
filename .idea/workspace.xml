@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="La til navbar">
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="La til footer">
+      <change beforePath="$PROJECT_DIR$/accessibility.html" beforeDir="false" afterPath="$PROJECT_DIR$/accessibility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aktivitet.html" beforeDir="false" afterPath="$PROJECT_DIR$/aktivitet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/github.html" beforeDir="false" afterPath="$PROJECT_DIR$/github.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
       <workItem from="1731736114609" duration="134000" />
       <workItem from="1731736390909" duration="12091000" />
       <workItem from="1731748597893" duration="2846000" />
-      <workItem from="1731765948524" duration="11032000" />
+      <workItem from="1731765948524" duration="11479000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -379,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731776966060</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="La til footer">
+      <option name="closed" value="true" />
+      <created>1731777082597</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731777082597</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +408,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Endret litt på navbar og rettet fakultet" />
     <MESSAGE value="Gjort om navbar og flyttet footer" />
     <MESSAGE value="Gjorde om nav og footer til å ha runde kanter" />
     <MESSAGE value="Ferdig med nav og gjør meny om til vertikal hvis skjerm er for liten" />
@@ -422,6 +432,7 @@
     <MESSAGE value="La til kommentarer for nav" />
     <MESSAGE value="Laget github.html" />
     <MESSAGE value="La til navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til navbar" />
+    <MESSAGE value="La til footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til footer" />
   </component>
 </project>

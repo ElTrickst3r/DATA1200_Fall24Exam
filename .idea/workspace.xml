@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Liten skrivefeil">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-    </list>
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="La til kommentarer for nav" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +101,7 @@
       <workItem from="1731736114609" duration="134000" />
       <workItem from="1731736390909" duration="12091000" />
       <workItem from="1731748597893" duration="2846000" />
-      <workItem from="1731765948524" duration="10265000" />
+      <workItem from="1731765948524" duration="10645000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -354,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731775526572</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="La til kommentarer for nav">
+      <option name="closed" value="true" />
+      <created>1731776419313</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731776419313</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Erstattet frameborder (obsolete) med border i CSS" />
     <MESSAGE value="Rettet opp feil med closing-tags" />
     <MESSAGE value="Rettet opp feil i main.css og gjorde kode litt finere." />
     <MESSAGE value="Endret litt på navbar og rettet fakultet" />
@@ -397,6 +401,7 @@
     <MESSAGE value="Siste oppussing av index.html" />
     <MESSAGE value="Nå bør alt være ferdig for index, aktivitet og main.css" />
     <MESSAGE value="Liten skrivefeil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Liten skrivefeil" />
+    <MESSAGE value="La til kommentarer for nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til kommentarer for nav" />
   </component>
 </project>

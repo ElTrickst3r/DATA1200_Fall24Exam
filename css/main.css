@@ -71,6 +71,10 @@ nav img {
   width: 60px;
 }
 
+nav img:hover {
+  transform: scale(1.2);
+}
+
 nav a {
   color: white;
   text-decoration: none;

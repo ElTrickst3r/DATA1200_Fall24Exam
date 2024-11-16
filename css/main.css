@@ -55,7 +55,7 @@ body {
 }
 
 /* navigation bar style */
-nav {
+nav { /* helps set dimensions of navbar and how each element in it should behave */
   display: flex;
   flex-wrap: wrap;
   background-color: #54347a;
@@ -82,17 +82,18 @@ nav a {
   font-size: 20px;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-}
-
 nav a:hover {
   color: #dfcbf7;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px){
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px){ /* if the viewport is too narrow, it turns the navbar into a horizontal navbar
+instead */
   nav {
     height: auto;
   }

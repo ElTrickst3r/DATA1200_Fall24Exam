@@ -216,7 +216,7 @@ nav ul li {
   .sub-info {
     display: flex;
     justify-content: space-between;
-    margin-top: none;
+    margin-top: 0;
   }
   
   .sub-code {
@@ -516,7 +516,7 @@ h1{
 
 .aktivitet-col p {
   margin: 15px 0;
-  padding-top: 10px 0;
+  padding-top: 10px;
 }
 
 /* Media Query for Medium Screens (700px or below) */
@@ -561,8 +561,7 @@ h1{
 footer {
   color: white;
   background-color: #54347a;
-  padding: 18px;
-  padding-top: 30px;
+  padding: 30px 18px 18px;
 }
 
 .footerTop {

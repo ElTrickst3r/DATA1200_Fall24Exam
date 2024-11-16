@@ -1,7 +1,9 @@
 /*
 List of content:
 - General style for all websites
+- (General) Style for content in <main>
 - Navigation bar
+- Footer (style for the second navigation section)
 - index.html:
     Info section (summary of degree)
     "Cards" that contains the main content of index.html. A button needs to be clicked to view info
@@ -9,6 +11,10 @@ List of content:
      Button design and behaviour (for the cards)
      FAQ (ofte stilte spørsmål) and Google Maps
      Faglig leder
+     Du er kanskje også interessert i disse? (other similar degrees)
+     Studenthistorier
+- aktivitet.html: Definining for text and images
+- Style for icons
  */
 
 /* General */
@@ -25,6 +31,29 @@ body {
   padding: 20px;
   margin: 0 auto;
  }
+
+/* Style for content in <main> */
+
+.page-background {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+.con-info{
+  padding: 40px 0;
+}
+
+.page-background h1 {
+  color: #54347a;
+  margin-bottom: 10px;
+}
+
+.page-background h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
 
 /* navigation bar style */
 nav {
@@ -71,28 +100,68 @@ nav a:hover {
   }
 }
 
+/* Footer starts */
+footer {
+  color: white;
+  background-color: #54347a;
+  padding: 30px 18px 18px;
+  border-radius: 12px;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerContent a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  color: #dfcbf7;
+  text-decoration: underline;
+}
+
+.footerContent li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.footerLink {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+}
+
+.footerLink a,
+.footerLink a:hover,
+.footerLink a:active,
+.footerLink a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footerTopTitle {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Footer ends */
 
 /* Info section styling */
-.page-background {
-  background-color: white;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-size: 16px; 
-}
-.con-info{
-  padding: 40px 0;
-}
-
-.page-background h1 {
-  color: #54347a;
-  margin-bottom: 10px;
-}
-
-.page-background h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
 
 .info {
   display: flex;
@@ -275,7 +344,8 @@ nav a:hover {
 
 
 
-   /* Popup Styles Kilde:
+   /* Button design and behaviour
+   Popup Styles Kilde:
   (https://www.youtube.com/watch?v=DrshwKL_TYo) */
   .popup {
     z-index: 1; 
@@ -552,7 +622,7 @@ h1{
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
   }
 
   div p a i {
@@ -560,66 +630,4 @@ h1{
   }
 }
 
-/* Accessibility-siden*/
-
-
-/* Footer starts */
-footer {
-  color: white;
-  background-color: #54347a;
-  padding: 30px 18px 18px;
-  border-radius: 12px;
-}
-
-.footerTop {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-  font-size: 24px;
-}
-
-.footerContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footerContent a {
-  color: white;
-  text-decoration: none;
-}
-
-.footerContent a:hover {
-  color: #dfcbf7;
-  text-decoration: underline;
-}
-
-.footerContent li {
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-.footerLink {
-  background-color: black;
-  color: white;
-  padding: 18px;
-  margin-bottom: 18px;
-  border-radius: 10px;
-}
-
-.footerLink a,
-.footerLink a:hover,
-.footerLink a:active,
-.footerLink a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.footerTopTitle {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-/* Footer ends */
+/* Accessibility */

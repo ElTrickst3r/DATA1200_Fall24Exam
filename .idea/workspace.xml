@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Gjorde om navbar for resten av sidene.">
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Forhåpentligvis lagt inn siste endringer i for alle sider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aktivitet.html" beforeDir="false" afterPath="$PROJECT_DIR$/aktivitet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <workItem from="1731736114609" duration="134000" />
       <workItem from="1731736390909" duration="12091000" />
       <workItem from="1731748597893" duration="2846000" />
-      <workItem from="1731765948524" duration="2439000" />
+      <workItem from="1731765948524" duration="3699000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -244,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731767470988</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Forhåpentligvis lagt inn siste endringer i for alle sider">
+      <option name="closed" value="true" />
+      <created>1731768479689</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731768479689</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +284,7 @@
     <MESSAGE value="Delvis ferdig med list of content og lagt inn små endringer i tekst for indeks.html" />
     <MESSAGE value="Ferdig med navbar for nå" />
     <MESSAGE value="Gjorde om navbar for resten av sidene." />
-    <option name="LAST_COMMIT_MESSAGE" value="Gjorde om navbar for resten av sidene." />
+    <MESSAGE value="Forhåpentligvis lagt inn siste endringer i for alle sider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Forhåpentligvis lagt inn siste endringer i for alle sider" />
   </component>
 </project>

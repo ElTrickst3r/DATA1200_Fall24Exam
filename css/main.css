@@ -1,7 +1,17 @@
 /*
-Vi bruker flex for å plassere elementene: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-*/
+List of content:
+- General style for all websites
+- Navigation bar
+- index.html:
+    Info section (summary of degree)
+    "Cards" that contains the main content of index.html. A button needs to be clicked to view info
+     Studiets oppbygging-card has its own style for the content displayed
+     Button design and behaviour (for the cards)
+     FAQ (ofte stilte spørsmål) and Google Maps
+     Faglig leder
+ */
 
+/* General */
 * {
   box-sizing: border-box;
 }
@@ -16,11 +26,7 @@ body {
   margin: 0 auto;
  }
 
-/* header style, navigation*/
-/* Kilder: nav bar:
-https://www.geeksforgeeks.org/how-to-align-a-logo-image-to-center-of-navigation-bar-using-html-and-css/
- */
-
+/* navigation bar style */
 nav {
   display: flex;
   flex-wrap: wrap;

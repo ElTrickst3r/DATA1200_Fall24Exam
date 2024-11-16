@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Har flyttet kode til Massan så kode passer sammen.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Rettet liten feil">
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,9 @@
     &quot;accountId&quot;: &quot;336e9409-ec8d-4627-9fb1-2cbaa1319dc7&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -44,29 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/thesh/IT/Webutvikling og inkluderende design&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/thesh/IT/Webutvikling og inkluderende design/Dev_Prototype",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.tools",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
       </set>
     </attachedChunks>
   </component>
@@ -90,6 +94,7 @@
       <workItem from="1731427196073" duration="5263000" />
       <workItem from="1731440383230" duration="75000" />
       <workItem from="1731736114609" duration="134000" />
+      <workItem from="1731736390909" duration="12091000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -123,7 +128,87 @@
       <option name="project" value="LOCAL" />
       <updated>1729855446680</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="La til manglende &lt;/div&gt;">
+      <option name="closed" value="true" />
+      <created>1731737386161</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731737386161</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Erstattet frameborder (obsolete) med border i CSS">
+      <option name="closed" value="true" />
+      <created>1731737730921</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731737730921</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Rettet opp feil med closing-tags">
+      <option name="closed" value="true" />
+      <created>1731737860934</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731737860934</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rettet opp feil i main.css og gjorde kode litt finere.">
+      <option name="closed" value="true" />
+      <created>1731738455345</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731738455345</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Endret litt på navbar og rettet fakultet">
+      <option name="closed" value="true" />
+      <created>1731741414136</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731741414136</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Gjort om navbar og flyttet footer">
+      <option name="closed" value="true" />
+      <created>1731743620688</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731743620688</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Gjorde om nav og footer til å ha runde kanter">
+      <option name="closed" value="true" />
+      <created>1731743950406</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731743950406</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ferdig med nav og gjør meny om til vertikal hvis skjerm er for liten">
+      <option name="closed" value="true" />
+      <created>1731747055815</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731747055815</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Gjorde om nav for andre sider og gjorde om rekkefølgen.">
+      <option name="closed" value="true" />
+      <created>1731747338526</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731747338526</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Rettet liten feil">
+      <option name="closed" value="true" />
+      <created>1731747510047</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731747510047</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +229,16 @@
     <MESSAGE value="Har endret på noen av navnene på filere for mer klarhet" />
     <MESSAGE value="Blitt ferdig med nav bar og lagt til css for å posisjonerede elementene riktig." />
     <MESSAGE value="Har flyttet kode til Massan så kode passer sammen." />
-    <option name="LAST_COMMIT_MESSAGE" value="Har flyttet kode til Massan så kode passer sammen." />
+    <MESSAGE value="La til manglende &lt;/div&gt;" />
+    <MESSAGE value="Erstattet frameborder (obsolete) med border i CSS" />
+    <MESSAGE value="Rettet opp feil med closing-tags" />
+    <MESSAGE value="Rettet opp feil i main.css og gjorde kode litt finere." />
+    <MESSAGE value="Endret litt på navbar og rettet fakultet" />
+    <MESSAGE value="Gjort om navbar og flyttet footer" />
+    <MESSAGE value="Gjorde om nav og footer til å ha runde kanter" />
+    <MESSAGE value="Ferdig med nav og gjør meny om til vertikal hvis skjerm er for liten" />
+    <MESSAGE value="Gjorde om nav for andre sider og gjorde om rekkefølgen." />
+    <MESSAGE value="Rettet liten feil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rettet liten feil" />
   </component>
 </project>

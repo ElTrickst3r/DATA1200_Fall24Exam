@@ -33,22 +33,34 @@ nav {
   border-radius: 12px;
 }
 
-nav a:hover {
-  color: #dfcbf7;
-}
-nav a {
-  color: white;
-}
-
 nav img {
   height: 36px;
   width: 60px;
 }
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  padding-left: 8px;
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #dfcbf7;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px){
+  nav {
+    height: auto;
+  }
+
+  nav a {
+    display: block;
+    float: none;
+    width: 100%;
+  }
 }
 
 

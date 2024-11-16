@@ -33,9 +33,7 @@ nav {
   background-color: #54347a;
   justify-content: space-between;
   height: 100px;
-  align-items: center;
   padding: 2% 6%;
-  position: relative;
   border-radius: 12px;
 }
 
@@ -52,19 +50,23 @@ nav a {
   font-size: 20px;
 }
 
+nav ul li {
+  display: inline-block;
+  list-style: none;
+}
+
 nav a:hover {
   color: #dfcbf7;
   text-decoration: underline;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 768px){
   nav {
     height: auto;
   }
 
   nav a {
     display: block;
-    float: none;
     width: 100%;
   }
 }

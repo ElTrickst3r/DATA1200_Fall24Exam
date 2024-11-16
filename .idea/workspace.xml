@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Ryddet accessibility.html for økt lesbarhet og la til anbefaling for bruk av tags for Steffen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aktivitet.html" beforeDir="false" afterPath="$PROJECT_DIR$/aktivitet.html" afterDir="false" />
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Endret footer-kommentar">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +103,7 @@
       <workItem from="1731736114609" duration="134000" />
       <workItem from="1731736390909" duration="12091000" />
       <workItem from="1731748597893" duration="2846000" />
-      <workItem from="1731765948524" duration="7941000" />
+      <workItem from="1731765948524" duration="8249000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -299,7 +297,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731772600084</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Ryddet index.html for økt lesbarhet og fjernet unødvendige div tags">
+      <option name="closed" value="true" />
+      <created>1731773965165</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731773965165</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Endret footer-kommentar">
+      <option name="closed" value="true" />
+      <created>1731774182322</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731774182322</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +354,8 @@
     <MESSAGE value="Ryddet til main.css for å øke lesbarhet" />
     <MESSAGE value="Ryddet aktivitet.html for økt lesbarhet" />
     <MESSAGE value="Ryddet accessibility.html for økt lesbarhet og la til anbefaling for bruk av tags for Steffen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ryddet accessibility.html for økt lesbarhet og la til anbefaling for bruk av tags for Steffen" />
+    <MESSAGE value="Ryddet index.html for økt lesbarhet og fjernet unødvendige div tags" />
+    <MESSAGE value="Endret footer-kommentar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Endret footer-kommentar" />
   </component>
 </project>

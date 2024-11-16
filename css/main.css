@@ -33,7 +33,6 @@ body {
  }
 
 /* Style for content in <main> */
-
 .page-background {
   background-color: white;
   padding: 30px 20px;
@@ -163,10 +162,7 @@ footer {
   font-weight: 700;
 }
 
-/* Footer ends */
-
 /* Info section styling */
-
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -204,7 +200,7 @@ footer {
   font-weight: bold;
 }
 
-/* Responsive design adjustments */
+/* Responsive design adjustments for info section */
 @media (max-width: 768px) {
   .info {
     flex-direction: column;
@@ -218,7 +214,7 @@ footer {
 
 
 
-/* Main section starts */
+/* Cards (main content) starts */
   .container {
     display: flex;
     justify-content: center; 
@@ -341,12 +337,9 @@ footer {
     padding: 0;
     margin: 0;
   }
-  
 
   /* cards ends here: 
    Kilde:https://www.youtube.com/watch?v=HBqWsrqK89U&t=17741s */
-
-
 
    /* Button design and behaviour
    Popup Styles Kilde:
@@ -417,8 +410,6 @@ footer {
         width: 100%; /* 1 card  on small screens */
       }
   }
-    
-/* Main section ends */
 
 /* Ofte stilte spørsmål starts */
 .container-faq-map {
@@ -440,11 +431,9 @@ footer {
 .map {
   flex: 1
 }
-/* Ofte stilte spørsmål ends */
 
 
 /* Faglig leder starts */
-
 .fagligleder {
   display: flex;
   flex-wrap: wrap;
@@ -477,10 +466,8 @@ footer {
   list-style: none;
   margin-bottom: 18px;
 }
-/* Faglig leder ends */
 
 /* Kanskje du er interssert i disse  starts*/
-
 .relevantestudier {
   margin: 40px 0;
 }
@@ -508,10 +495,7 @@ tr {
   border-bottom: 2px solid rgb(190 190 222);
 }
 
-/* Kanskje du er interseert i disse  ends*/
-
 /* Studenthistorier starts */
-
 .studenthistorier{
   display: flex;
   justify-content: space-between;
@@ -527,8 +511,6 @@ tr {
 .studenthistorier li {
   margin-bottom: 18px;
 }
-
-/* Studenthistorier ends */
 
 
 /* -----------aktivitet starts--------- */

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="La til hover-funksjon for navbar logo så det er lettere å se når den velges">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="La til section kommentarer hvor det trengs">
       <change beforePath="$PROJECT_DIR$/aktivitet.html" beforeDir="false" afterPath="$PROJECT_DIR$/aktivitet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
       <workItem from="1731736114609" duration="134000" />
       <workItem from="1731736390909" duration="12091000" />
       <workItem from="1731748597893" duration="2846000" />
-      <workItem from="1731765948524" duration="5253000" />
+      <workItem from="1731765948524" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -267,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731770252113</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="La til section kommentarer hvor det trengs">
+      <option name="closed" value="true" />
+      <created>1731771359775</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731771359775</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +310,7 @@
     <MESSAGE value="Forhåpentligvis lagt inn siste endringer i for alle sider" />
     <MESSAGE value="Endret rekkefølge og lagde list of content for mer klarhet" />
     <MESSAGE value="La til hover-funksjon for navbar logo så det er lettere å se når den velges" />
-    <option name="LAST_COMMIT_MESSAGE" value="La til hover-funksjon for navbar logo så det er lettere å se når den velges" />
+    <MESSAGE value="La til section kommentarer hvor det trengs" />
+    <option name="LAST_COMMIT_MESSAGE" value="La til section kommentarer hvor det trengs" />
   </component>
 </project>

@@ -405,7 +405,7 @@ nav a:hover {
 }
 /* Faglig leder ends */
 
-/* Kanskje du er interseert i disse  starts*/
+/* Kanskje du er interssert i disse  starts*/
 
 .relevantestudier {
   margin: 40px 0;
@@ -424,11 +424,6 @@ nav a:hover {
 table {
   border-collapse: collapse; /* ref: https://stackoverflow.com/questions/55623161/how-to-put-a-line-under-first-row-in- */
   background-color: #f5f5ff;
-}
-
-caption {
-  text-align: left;
-  font-size: 20px;
 }
 
 th, td {
@@ -593,10 +588,12 @@ footer {
 
 .footerContent a {
   color: white;
+  text-decoration: none;
 }
 
 .footerContent a:hover {
   color: #dfcbf7;
+  text-decoration: underline;
 }
 
 .footerContent li {

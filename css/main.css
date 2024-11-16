@@ -12,7 +12,7 @@ body {
   color: #333; 
   line-height: 1.6; 
   font-family: Arial, sans-serif; 
-   padding: 20px; 
+  padding: 20px;
   margin: 0 auto;
  }
 
@@ -37,20 +37,16 @@ nav a:hover {
 }
 nav a {
   color: white;
-  flex: 1;
+  margin-right: auto;
 }
 
 nav img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 36px;
   width: 60px;
-}
-
-nav ul {
-  flex: 1;
-}
-
-.logo {
-  text-align: center;
 }
 
 nav ul li {

@@ -617,4 +617,9 @@ h1{
   }
 }
 
+/* GitHub */
+.github {
+  border: 2px solid black; /* Added this to increase visibility since the background is white */
+}
+
 /* Accessibility */

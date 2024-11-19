@@ -104,64 +104,6 @@ instead */
   }
 }
 
-/* Footer starts */
-footer {
-  color: white;
-  background-color: #54347a;
-  padding: 30px 18px 18px;
-  border-radius: 12px;
-}
-
-.footerTop {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-  font-size: 24px;
-}
-
-.footerContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footerContent a {
-  color: white;
-  text-decoration: none;
-}
-
-.footerContent a:hover {
-  color: #dfcbf7;
-  text-decoration: underline;
-}
-
-.footerContent li {
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-.footerLink {
-  background-color: black;
-  color: white;
-  padding: 18px;
-  margin-bottom: 18px;
-  border-radius: 10px;
-}
-
-.footerLink a,
-.footerLink a:hover,
-.footerLink a:active,
-.footerLink a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.footerTopTitle {
-  font-size: 28px;
-  font-weight: 700;
-}
 
 /* Info section styling */
 .info {
@@ -515,6 +457,65 @@ tr {
 
 .studenthistorier li {
   margin-bottom: 18px;
+}
+
+/* Footer starts */
+footer {
+  color: white;
+  background-color: #54347a;
+  padding: 30px 18px 18px;
+  border-radius: 12px;
+}
+
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  font-size: 24px;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerContent a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  color: #dfcbf7;
+  text-decoration: underline;
+}
+
+.footerContent li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.footerLink {
+  background-color: black;
+  color: white;
+  padding: 18px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+}
+
+.footerLink a,
+.footerLink a:hover,
+.footerLink a:active,
+.footerLink a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footerTopTitle {
+  font-size: 28px;
+  font-weight: 700;
 }
 
 

@@ -27,9 +27,7 @@
         <main>
             <h1>Universal Design: Our Accessibility Measures</h1>
 
-            <h2>
-                Tools and methods used in the testing process
-            </h2>
+            <h2>Tools and methods used in the testing process</h2>
             <ul>
                 <li>
                     <p>Manual testing by multiple users on several devices</p>
@@ -41,8 +39,7 @@
                     <p>Chrome DevTools: Device toolbar</p>
                 </li>
                 <li>
-                    <p><a href="https://pages.github.com">Github Pages - for live website
-                            testing</a></p>
+                    <p><a href="https://pages.github.com">GitHub Pages - for live website testing</a></p>
                 </li>
                 <li>
                     <p><a href="https://wave.webaim.org">Wave Evaluation Tool - accessibility tester</a></p>
@@ -62,44 +59,135 @@
             </ul>
 
             <h2>Automatic Test Results</h2>
-            <p>
+            <section class="aktivitet">
+                <div class="row">
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/lighthouse-test-results.png"
+                                alt="Lighthouse desktop accessibility test results">
+                            <figcaption>Lighthouse accessibility test results for desktops (hosted on GitHub for
+                                testing)</figcaption>
+                        </figure>
+                    </div>
 
-            </p>
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/lighthouse-mobile-test-results.png"
+                                alt="Lighthouse mobile accessibility test results">
+                            <figcaption>Lighthouse accessibility test results for mobile devices (hosted on GitHub for
+                                testing)</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/andi-contrast-test.png" alt="ANDI contrast evaluation">
+                            <figcaption>ANDI accessibility contrast evaluation</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/wave-test-results.png" alt="WAVE tool test results">
+                            <figcaption>WAVE Evaluation Tool accessibility test results</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
             <h2>Manual Measures and Testing for Accessibility and Universal Design</h2>
             <p>The project is built on a traditional body-style with header, main, and footer. We have used semantic
                 HTML with the typical elements such as &lt;strong&gt;, &lt;aside&gt;, &lt;ul&gt;, &lt;table&gt;, &lt;
-                li&gt; and &lt;iframe&gt; in addition to standard heading conventions, to make the website work smoothly 
+                li&gt; and &lt;iframe&gt; in addition to standard heading conventions, to make the website work smoothly
                 for accessibility screen readers.</p>
             <p>We added padding to increase the clickable area in the navigation menu, making it easier for users to
-                select elements. The font size for the navigation menu text was increased for improved readability. We 
-                also made sure to use white for proper contrast to the purple background. Additionally, when users
-                hover over navigation links or the logo, the logo increases in size, and the text changes color and
-                gains an underline. These changes visually indicate interactivity, aiding usability.</p>
+                select elements. The font size for the navigation menu text was increased for improved readability. We
+                also made sure to use white for proper contrast to the purple background. Additionally, when users hover
+                over navigation links or the logo, the logo increases in size, and the text changes color and gains an
+                underline. These changes visually indicate interactivity, aiding usability.</p>
             <p>For images, all alt attributes contain descriptive text for users with visual impairments.</p>
-            <p>We also ensured the table on our index page is accessible by including the proper &lt;th&gt; element for the
-                    header and a table caption as recommended by general accessibility guidelines. Additionally, for users who
-                    cannot use a mouse, we enabled functionality to close the pop-out cards using the Escape key.</p>
+            <p>We also ensured the table on our index page is accessible by including the proper &lt;th&gt; element for
+                the header and a table caption as recommended by general accessibility guidelines. Additionally, for
+                users who cannot use a mouse, we enabled functionality to close the pop-out cards using the Escape key.
+            </p>
+
+            <section class="aktivitet">
+                <div class="row">
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/alt-text-pictures.png"
+                                alt="Example of images with alternative descriptive text">
+                            <figcaption>Descriptive alternative text for images in our code</figcaption>
+                        </figure>
+                    </div>
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/accessible-table.png" alt="Accessible HTML table structure">
+                            <figcaption>Accessible HTML table</figcaption>
+                        </figure>
+                    </div>
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/test-warning-mouse-functionality.png"
+                                alt="Warning during testing on lack of mouse functionality">
+                            <figcaption>Warning from accessibility testing on X-button interactability </figcaption>
+                        </figure>
+                    </div>
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/key-down-close.png" alt="Fix for warning on mouse functionality">
+                            <figcaption>Code implemented to resolve warning on X-button interactability</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
             <p>Manual testing was performed on Edge, Firefox, Chrome, and Safari for PC/Mac, as well as Chrome on iOS
                 and Android. We also invited four family members and acquaintances to test the site and made incremental
                 adjustments based on their feedback.</p>
 
             <h2>Flexibility and Responsive Design</h2>
-            <p>We have made use of the flexbox property in different places and the overall layout is made to adapt dynamically to
-                the viewport width, reducing horizontal scrolling and overflow issues. This makes the user experience
-                smoother and scalable.</p>
+            <p>The overall layout is made to adapt dynamically to the viewport width, reducing horizontal scrolling and
+                overflow issues. We have also made use of the flexbox property in different places. These
+                implementations make the
+                user experience smoother and scalable.</p>
             <p>The cards on the index page adjust their size and layout based on screen width. Important content like
-                navigation text was styled with larger fonts and hover effects to enhance accessibility on all devices.
+                navigation text is styled with larger fonts and hover effects to enhance accessibility on all devices.
                 These responsive measures ensure functionality and usability for various screen sizes and device types.
             </p>
 
+            <section class="aktivitet">
+                <div class="row">
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/viewport.png" alt="Viewport code">
+                            <figcaption>Code for viewport</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/u-eyes-ipad-test.png" alt="iPad layout simulation">
+                            <figcaption>Accessibility testing on iPad using U-Eyes (example)</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="accessibility-col">
+                        <figure>
+                            <img src="media/samsung-galaxy-s20.png" alt="Android phone layout simulation">
+                            <figcaption>Responsive design testing on Samsung Galaxy S20 (example)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
             <h2>Conclusion</h2>
-            <p>In summary, we incorporated several accessibility features such as clear
-                navigation, semantic HTML structure, descriptive alternative texts for images and accessible table formatting. The
-                site was tested on multiple devices and by a handful of external users, with adjustments made along the way to
-                improve accessibility and usability. These measures create a user-friendly and inclusive experience, but
-                we acknowledge there is always room for further improvement and are well aware that we still have plenty to learn about 
-                universal design principles.</p>
+            <p>In summary, we incorporated several accessibility features such as clear navigation, semantic HTML
+                structure, descriptive alternative texts for images and accessible table formatting. The site was tested
+                on multiple devices and by a handful of external users, with adjustments made along the way to improve
+                accessibility and usability. These measures create a user-friendly and inclusive experience, but we
+                acknowledge there is always room for further improvement and are well aware that we still have plenty to
+                learn about universal design principles.</p>
         </main>
     </div>
 

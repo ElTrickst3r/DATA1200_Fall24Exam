@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Finished main content of github.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6641faf7-8828-4be1-8fa8-fd50defa3fb9" name="Changes" comment="Added alt for images in github.html">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +108,7 @@
       <workItem from="1731765948524" duration="12613000" />
       <workItem from="1731778674993" duration="3566000" />
       <workItem from="1732036786321" duration="1238000" />
+      <workItem from="1732366462726" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="Har endret på noen av navnene på filere for mer klarhet">
       <option name="closed" value="true" />
@@ -405,7 +406,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731784833781</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added alt for images in github.html">
+      <option name="closed" value="true" />
+      <created>1732366849115</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1732366849115</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +432,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ferdig med nav og gjør meny om til vertikal hvis skjerm er for liten" />
     <MESSAGE value="Gjorde om nav for andre sider og gjorde om rekkefølgen." />
     <MESSAGE value="Rettet liten feil" />
     <MESSAGE value="Delvis ferdig med list of content og lagt inn små endringer i tekst for indeks.html" />
@@ -448,6 +456,7 @@
     <MESSAGE value="La til footer" />
     <MESSAGE value="Gjør klar main og laster opp ny fil" />
     <MESSAGE value="Finished main content of github.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished main content of github.html" />
+    <MESSAGE value="Added alt for images in github.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added alt for images in github.html" />
   </component>
 </project>
